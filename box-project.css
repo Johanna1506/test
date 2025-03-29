@@ -1,0 +1,62 @@
+.box_project_security, .box_project_equity {
+    background-color: #F6F1D5 !important;
+    border-radius: 12px !important;
+    max-width: 466px !important;
+}
+img.one-whole {
+    border-radius: 12px 12px 0 0 !important;
+}
+.cover-text-and-status {
+    padding: 18px !important;
+    color: #24372A !important;
+}
+.headline .push--top {
+    display: none !important;
+}
+.tags {
+    display: none !important;
+}
+.text-name {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+}
+.text-headline {
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    min-height: 60px !important;
+}
+
+.progress-bar {
+    border-radius: 6px !important;
+    height: 20px !important;
+    background-color: #24372A !important;
+}
+.progress-bar .bar {
+    border-radius: 6px !important;
+    height: 20px !important;
+    background-color: #F0BA58 !important;
+}
+.status > .grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 6px !important;
+}
+.status > .grid > .grid__item > div {
+    min-width: 200px !important;
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+.status > .grid > .grid__item {
+    display: flex !important;
+    gap: 16px !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    align-items: flex-start !important;
+}
+.status > .grid > .grid__item:has(div)::before {
+    content: url('https://img.icons8.com/?size=24&id=11208&format=png&color=F0BA58');
+    display: inline-block;
+    margin-right: 8px;
+}
