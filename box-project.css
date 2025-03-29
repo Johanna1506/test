@@ -127,7 +127,7 @@ img.one-whole {
     align-items: flex-start!important;
     text-align: center !important;
     flex-direction: column!important;
-    margin-bottom: 74px !important;
+    margin: 0 0 74px 0 !important;
 }
 
 .neodual-type-security {
