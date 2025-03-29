@@ -1,62 +1,150 @@
+body.p-prosperia-invest .card {
+    background-color: #F6F1D5 !important;
+}
 .box_project_security, .box_project_equity {
     background-color: #F6F1D5 !important;
     border-radius: 12px !important;
-    max-width: 466px !important;
+    max-width: 346px !important;
+    min-width: 346px !important;
 }
+
 img.one-whole {
     border-radius: 12px 12px 0 0 !important;
 }
-.cover-text-and-status {
-    padding: 18px !important;
-    color: #24372A !important;
+.card {
+    border-radius: 12px !important;;
 }
-.headline .push--top {
-    display: none !important;
-}
-.tags {
-    display: none !important;
-}
-.text-name {
-    font-size: 24px !important;
-    font-weight: 700 !important;
-}
-.text-headline {
-    font-size: 18px !important;
-    font-weight: 400 !important;
-    min-height: 60px !important;
+.card-header {
+    position: relative !important;
 }
 
-.progress-bar {
+.card-image {
+    position: relative !important;
+    border-radius: 12px 12px 0 0 !important;
+}
+
+.neodual-category {
+    position: absolute !important;
+    bottom: 10px !important;
+    left: 10px !important;
+    background: #F0BA58 !important;
+    padding: 5px 10px !important;
+    border-radius: 6px !important;
+    font-weight: bold !important;
+    min-height: 28px !important;
+    font-size: 13px !important;
+}
+
+.neodual-card-content {
+    padding: 18px !important;
+    color: #24372A !important;
+    margin-top: 0 !important;
+    background-color: #F6F1D5 !important;
+}
+
+.neodual-card-content .push--top {
+    margin-top: 0 !important;
+}
+
+.neodual-address_city {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    display: inline !important;
+}
+.neodual-address_city {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .neodual-address_city::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 10px;
+    height: 100%;
+    background-color: #F6F1D5;
+    z-index: 1;
+  }
+
+.neodual-project-user {
+    display: none !important;
+}
+
+.neodual-about-box {
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    min-height: 28px !important;
+    margin-top: 0 !important;
+}
+
+.neodual-flex-box.neodual-type-security-state-2::after {
+    content: "Découvrir";
+    display: flex;
+    height: 30px;
+    background-color: #24372A !important;
+    color: white;
+    margin: 12px auto;
+    border-radius: 6px;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+}
+.neodual-goal {
+    position: absolute !important;
+    bottom: 18px !important;
+    margin: 0 !important;
+    width: 90% !important;
+}
+.typ_project.background_color_security {
+    padding: 0 18px !important;
+}
+
+.neodual-goal .progress-bar {
     border-radius: 6px !important;
     height: 20px !important;
     background-color: #24372A !important;
+    margin-top: 0px !important;
 }
+
 .progress-bar .bar {
     border-radius: 6px !important;
     height: 20px !important;
     background-color: #F0BA58 !important;
+    font-size: 0;
 }
-.status > .grid {
+.neodual-bar-stripped {
+    background-image: none !important;
+}
+.neodual-status .background_color_security {
+    background-color: #F6F1D5 !important;
+}
+.neodual-status .background_color_security .neodual-flex-box{
     display: flex !important;
-    flex-direction: column !important;
+    justify-content: space-between !important;
+    align-items: flex-start!important;
+    text-align: center !important;
+    flex-direction: column!important;
+    margin-bottom: 74px !important;
+}
+
+.neodual-type-security {
+    min-width: 100px !important;
+    padding: 0 !important;
+    flex-direction: row !important;
     gap: 6px !important;
 }
-.status > .grid > .grid__item > div {
-    min-width: 200px !important;
-    display: flex !important;
-    flex-direction: row-reverse !important;
-    justify-content: space-between !important;
-    align-items: center !important;
+
+.text_type_group {
+    color: #24372A !important;
 }
-.status > .grid > .grid__item {
-    display: flex !important;
-    gap: 16px !important;
-    flex-direction: row !important;
-    justify-content: space-around !important;
-    align-items: flex-start !important;
+.neodual-type-security .text_type_group:first-of-type::after {
+    content: " : " !important;
 }
-.status > .grid > .grid__item:has(div)::before {
-    content: url('https://img.icons8.com/?size=24&id=11208&format=png&color=F0BA58');
+.neodual-type-security:has(div)::before {
+    content: url('https://img.icons8.com/?size=20&id=11208&format=png&color=F0BA58');
     display: inline-block;
     margin-right: 8px;
 }
