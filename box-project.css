@@ -8,15 +8,43 @@
     align-items: flex-start  !important;
     justify-content: flex-start  !important;
     flex-wrap: wrap !important;
-    gap: 16px !important;
+    gap: 24px !important;
 }
 .projects > .grid--center > .grid__item {
     width: auto !important;
     padding: 0 !important;
 
 }
-.neodual-goal:before {
-  content: "Objectif : ";
+
+.neodual-goal {
+    position: relative;
+}
+
+.neodual-goal::before {
+    content: "Objectif : ";
+    font-weight: bold;
+}
+
+.neodual-goal {
+    white-space: nowrap;
+}
+
+.neodual-goal::before,
+.neodual-goal * {
+    display: inline;
+}
+
+.neodual-goal::after {
+    content: "";
+}
+
+.neodual-goal {
+    font-size: 0;
+}
+
+.neodual-goal::before,
+.neodual-goal * {
+    font-size: initial;
 }
 
 body.p-prosperia-invest .card {
@@ -170,7 +198,7 @@ img.one-whole {
     align-items: flex-start!important;
     text-align: center !important;
     flex-direction: column!important;
-    margin: 0 0 74px 0 !important;
+    margin: 0 !important;
 }
 
 .neodual-type-security {
