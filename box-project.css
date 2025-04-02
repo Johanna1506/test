@@ -3,6 +3,14 @@
     width: 80% !important;
     margin: 0 auto !important;
 }
+@media screen and (max-width: 600px) {
+    #section_own_projects {
+        width: 100% !important;
+    }
+    .projects > .grid--center {
+        gap: 12px !important;
+    }
+}
 .projects > .grid--center {
     display: flex !important;
     align-items: flex-start  !important;
@@ -141,7 +149,7 @@ img.one-whole {
     color: white;
     margin: 12px auto;
     border-radius: 6px;
-    width: 90%;
+    width: 80%;
     align-items: center;
     justify-content: center;
 }
@@ -149,7 +157,7 @@ img.one-whole {
     position: absolute !important;
     bottom: 18px !important;
     margin: 0 !important;
-    width: 100% !important;
+    width: 90% !important;
 }
 
 .neodual-goal .progress-bar {
@@ -157,7 +165,7 @@ img.one-whole {
     height: 20px !important;
     background-color: #24372A !important;
     margin-top: 0px !important;
-    width: 90% !important;
+    width: 100% !important;
 }
 
 .progress-bar .bar {
