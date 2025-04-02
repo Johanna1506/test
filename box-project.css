@@ -12,7 +12,7 @@
 .neodual-goal:before {
   content: "Objectif: ";
 }
-.neodual-goal::before {
+.neodual-goal:after {
     content: "";
     position: absolute;
     right: 0;
@@ -160,10 +160,12 @@ img.one-whole {
 .neodual-bar-stripped {
     background-image: none !important;
 }
-.neodual-status .background_color_security {
+.neodual-status .background_color_security,
+.neodual-status .background_color_equity {
     background-color: #F6F1D5 !important;
 }
-.neodual-status .background_color_security .neodual-flex-box{
+.neodual-status .background_color_security .neodual-flex-box,
+.neodual-status .background_color_equity .neodual-flex-box {
     display: flex !important;
     justify-content: space-between !important;
     align-items: flex-start!important;
