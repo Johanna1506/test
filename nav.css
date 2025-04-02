@@ -1,0 +1,9 @@
+.k-header {
+    background-color: #1e3e36 !important;
+}
+.k-header .k-menu__nav > .k-menu__item > .k-menu__link .k-menu__link-text {
+    color: #F6F1D5 !important;
+}
+.k-header .k-menu__nav > .k-menu__item:hover > .k-menu__link .k-menu__link-text {
+    color: #1e3e36 !important;
+}
