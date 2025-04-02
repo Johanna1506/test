@@ -1,6 +1,6 @@
 @import url('./box-project.css');
 @import url('./nav.css');
-@import url('./project-page.css');
+@import url('./projects-page.css');
 
 #logo_text{
   color: #f49712;
@@ -104,6 +104,3 @@
     color: #4d6e80;
     }
  }
-<script>
- console.log('index.css loaded');
-</script>
