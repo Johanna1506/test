@@ -104,3 +104,6 @@
     color: #4d6e80;
     }
  }
+<script>
+ console.log('index.css loaded');
+</script>
