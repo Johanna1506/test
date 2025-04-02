@@ -25,7 +25,7 @@ body.p-prosperia-invest .card {
     max-height: 512px !important;
 }
 
-.p-prosperia-invest a {
+.p-prosperia-invest .card a {
     height: 100% !important;
     display: block !important;
     position: absolute !important;
