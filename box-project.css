@@ -6,10 +6,23 @@ body.p-prosperia-invest .card {
     border-radius: 12px !important;
     max-width: 346px !important;
     min-width: 346px !important;
+    min-height: 512px !important;
+    max-height: 512px !important;
+}
+
+.p-prosperia-invest a {
+    height: 100% !important;
+    display: block !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
 }
 
 img.one-whole {
     border-radius: 12px 12px 0 0 !important;
+    height: 210px !important;
 }
 .card {
     border-radius: 12px !important;;
@@ -38,7 +51,7 @@ img.one-whole {
 .neodual-card-content {
     padding: 18px !important;
     color: #24372A !important;
-    margin-top: 0 !important;
+    margin-top: 200px !important;
     background-color: #F6F1D5 !important;
 }
 
