@@ -1,3 +1,18 @@
+#section_own_projects {
+    padding: 16px !important;
+    width: 80% !important;
+    margin: 0 auto !important;
+}
+.projects > .grid--center {
+   display: flex !important;
+    align-items: flex-start  !important;
+    justify-content: flex-start  !important;
+    flex-wrap: wrap !important;
+}
+.neodual-goal:before {
+  content: "Objectif: ";
+}
+
 body.p-prosperia-invest .card {
     background-color: #F6F1D5 !important;
 }
