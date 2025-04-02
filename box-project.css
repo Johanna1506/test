@@ -10,7 +10,7 @@
     flex-wrap: wrap !important;
 }
 .neodual-goal:before {
-  content: "Objectif: ";
+  content: "Objectif : ";
 }
 .neodual-goal:after {
     content: "";
@@ -138,10 +138,7 @@ img.one-whole {
     position: absolute !important;
     bottom: 18px !important;
     margin: 0 !important;
-    width: 90% !important;
-}
-.typ_project.background_color_security {
-    padding: 0 18px !important;
+    width: 100% !important;
 }
 
 .neodual-goal .progress-bar {
@@ -163,6 +160,7 @@ img.one-whole {
 .neodual-status .background_color_security,
 .neodual-status .background_color_equity {
     background-color: #F6F1D5 !important;
+    padding: 0 18px !important;
 }
 .neodual-status .background_color_security .neodual-flex-box,
 .neodual-status .background_color_equity .neodual-flex-box {
