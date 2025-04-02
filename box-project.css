@@ -12,9 +12,23 @@
 .neodual-goal:before {
   content: "Objectif: ";
 }
+.neodual-goal::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 10px;
+    height: 100%;
+    background-color: #F6F1D5;
+    z-index: 1;
+  }
 
 body.p-prosperia-invest .card {
     background-color: #F6F1D5 !important;
+    max-width: 346px !important;
+    min-width: 346px !important;
+    min-height: 512px !important;
+    max-height: 512px !important;
 }
 .box_project_security, .box_project_equity {
     background-color: #F6F1D5 !important;
