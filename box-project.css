@@ -9,6 +9,10 @@
     justify-content: flex-start  !important;
     flex-wrap: wrap !important;
 }
+.projects > .grid--center > .grid__item {
+    width: auto !important;
+
+}
 .neodual-goal:before {
   content: "Objectif : ";
 }
@@ -67,6 +71,10 @@ img.one-whole {
     font-size: 13px !important;
 }
 
+.neodual-category:empty {
+    display: none !important;
+}
+
 .neodual-card-content {
     padding: 18px !important;
     color: #24372A !important;
@@ -112,7 +120,7 @@ img.one-whole {
     margin-top: 0 !important;
 }
 
-.neodual-flex-box.neodual-type-security-state-2::after {
+.neodual-status > div::after {
     content: "Découvrir";
     display: flex;
     height: 30px;
