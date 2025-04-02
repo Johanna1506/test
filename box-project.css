@@ -29,23 +29,6 @@
     white-space: nowrap;
 }
 
-.neodual-goal::before,
-.neodual-goal * {
-    display: inline;
-}
-
-.neodual-goal::after {
-    content: "";
-}
-
-.neodual-goal {
-    font-size: 0;
-}
-
-.neodual-goal::before,
-.neodual-goal * {
-    font-size: initial;
-}
 
 body.p-prosperia-invest .card {
     background-color: #F6F1D5 !important;
