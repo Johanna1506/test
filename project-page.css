@@ -1,7 +1,7 @@
-#section_header_menu_project .grid__item:first-child() {
-    display: none !important;
+#grid_horizontal_share_project {
+    width: 90% !important;
+    margin: 0 auto !important;
 }
-
 #section_nav_project .nav .nav_menu_align .menu-item {
     padding: 12px 16px;
     color: #1e3e36 !important;
@@ -11,13 +11,17 @@
     border-color: #1e3e36 !important;
 }
 
-#header_user_social_links {
+.horizontal_project_logo, .horizontal_project_subtitle, .horizontal_project_subtitle {
+    display: none;
+}
+
+#horizontal_card_project .inside-project-category {
+    display: none !important;
+}
+#horizontal_card_project  .inside-project-owner {
     display: none !important;
 }
 
-.island.text--center.dotted-border {
-    border: none !important;
-    background-color: #F0BA58 !important;
-    border-radius: 6px !important;
-    padding: 12px 16px !important;
+#horizontal_card_project .amf_text_security {
+    display: none !important;
 }
