@@ -1,15 +1,23 @@
-.share_project .section_header_menu_project > .grid__item {
+#section_header_menu_project > .grid__item {
     display: none !important;
 }
 
-.share_nav_project_equity nav li > a {
-    color: #1e3e36 !important;
+#section_nav_project .nav .nav_menu_align .menu-item {
     padding: 12px 16px;
-}
-.section_nav_project li > a:hover {
     color: #1e3e36 !important;
 }
 
-.section_nav_project li .menu-item.active {
+#section_nav_project .nav .nav_menu_align .menu-item.active {
     border-color: #1e3e36 !important;
+}
+
+#header_user_social_links {
+    display: none !important;
+}
+
+.island.text--center.dotted-border {
+    border: none !important;
+    background-color: #F0BA58 !important;
+    border-radius: 6px !important;
+    padding: 12px 16px !important;
 }
