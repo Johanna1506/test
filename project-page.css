@@ -1,4 +1,4 @@
-#section_header_menu_project > .grid__item {
+#section_header_menu_project .grid__item:first-child() {
     display: none !important;
 }
 
