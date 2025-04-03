@@ -6,11 +6,10 @@
     color: #1e3e36 !important;
     padding: 12px 16px;
 }
-.share_nav_project_equity nav li > a:hover {
-    background-color: #1e3e36 !important;
-    color: #F6F1D5 !important;
+.section_nav_project li > a:hover {
+    color: #1e3e36 !important;
 }
 
-.share_nav_project_equity nav li .menu-item.active {
+.section_nav_project li .menu-item.active {
     border-color: #1e3e36 !important;
 }
