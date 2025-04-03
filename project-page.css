@@ -1,27 +1,85 @@
 #grid_horizontal_share_project {
-    width: 90% !important;
-    margin: 0 auto !important;
+  width: 90% !important;
+  margin: 0 auto !important;
 }
 #section_nav_project .nav .nav_menu_align .menu-item {
-    padding: 12px 16px;
-    color: #1e3e36 !important;
+  padding: 12px 16px;
+  color: #1e3e36 !important;
+}
+#grid_horizontal_share_project .grid__item:nth-of-type(1) {
+  width: 70% !important;
 }
 
+#grid_horizontal_share_project .grid__item:nth-of-type(2) {
+  width: 30% !important;
+}
+#grid_horizontal_share_project .grid__item:nth-of-type(2) .card {
+  background-color: #f7f3db;
+}
 #section_nav_project .nav .nav_menu_align .menu-item.active {
-    border-color: #1e3e36 !important;
+  border-color: #1e3e36 !important;
 }
 
-.horizontal_project_logo, .horizontal_project_subtitle, .horizontal_project_subtitle {
-    display: none;
+.horizontal_project_logo,
+.horizontal_project_subtitle,
+.horizontal_project_subtitle {
+  display: none;
 }
 
 #horizontal_card_project .inside-project-category {
-    display: none !important;
+  display: none !important;
 }
-#horizontal_card_project  .inside-project-owner {
-    display: none !important;
+#horizontal_card_project .inside-project-owner {
+  display: none !important;
 }
 
 #horizontal_card_project .amf_text_security {
-    display: none !important;
+  display: none !important;
+}
+
+#horizontal_card_project {
+  background-color: #f6f1d5 !important;
+  border-radius: 6px !important;
+  color: #24372a !important;
+  margin-top: 60px !important;
+}
+#horizontal_card_project .inside-project-name {
+  margin: 12px 0 !important;
+  font-size: 24px !important;
+}
+.inside-project-status .grid {
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.inside-project-status .grid .grid__item .text--center {
+  text-align: left !important;
+}
+#grid_horizontal_share_project .grid__item:nth-of-type(1) {
+  width: 70% !important;
+}
+
+#grid_horizontal_share_project .grid__item:nth-of-type(2) {
+  width: 30% !important;
+}
+
+.inside-project-status .grid .grid__item:has(div)::before {
+  content: url("https://img.icons8.com/?size=20&id=11208&format=png&color=F0BA58");
+  display: inline-block;
+  margin-right: 8px;
+}
+.inside-project-status .grid .grid__item {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: start !important;
+  width: auto !important;
+}
+.inside-project-status .grid .grid__item div {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: flex-start;
+  width: auto !important;
+  gap: 6px;
+  align-items: flex-start;
 }
