@@ -167,7 +167,9 @@ img.one-whole {
     margin-top: 0px !important;
     width: 100% !important;
 }
-
+.progress-bar {
+    height: 20px !important;
+}
 .progress-bar .bar {
     border-radius: 6px !important;
     height: 20px !important;
