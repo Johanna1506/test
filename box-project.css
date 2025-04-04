@@ -1,214 +1,211 @@
 #section_own_projects {
-    padding: 16px !important;
-    width: 80% !important;
-    margin: 0 auto !important;
+  padding: 16px !important;
+  width: 80% !important;
+  margin: 0 auto !important;
 }
 @media screen and (max-width: 600px) {
-    #section_own_projects {
-        width: 100% !important;
-    }
-    .projects > .grid--center {
-        gap: 12px !important;
-    }
+  #section_own_projects {
+    width: 100% !important;
+  }
+  .projects > .grid--center {
+    gap: 12px !important;
+  }
 }
 .projects > .grid--center {
-    display: flex !important;
-    align-items: flex-start  !important;
-    justify-content: flex-start  !important;
-    flex-wrap: wrap !important;
-    gap: 24px !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  flex-wrap: wrap !important;
+  gap: 24px !important;
 }
 .projects > .grid--center > .grid__item {
-    width: auto !important;
-    padding: 0 !important;
-
+  width: auto !important;
+  padding: 0 !important;
 }
 
 .neodual-goal {
-    position: relative;
+  position: relative;
 }
 
 .neodual-goal::before {
-    content: "Objectif : ";
-    font-weight: bold;
+  content: "Objectif : ";
+  font-weight: bold;
 }
 
 .neodual-goal {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
-
-.projects .card {
-    background-color: #F6F1D5 !important;
-    max-width: 346px !important;
-    min-width: 346px !important;
-    min-height: 512px !important;
-    max-height: 512px !important;
+body.p-prosperia-invest .card {
+  background-color: #f6f1d5 !important;
+  max-width: 346px !important;
+  min-width: 346px !important;
+  min-height: 512px !important;
+  max-height: 512px !important;
 }
-.box_project_security, .box_project_equity {
-    background-color: #F6F1D5 !important;
-    border-radius: 12px !important;
-    max-width: 346px !important;
-    min-width: 346px !important;
-    min-height: 512px !important;
-    max-height: 512px !important;
+.box_project_security,
+.box_project_equity {
+  background-color: #f6f1d5 !important;
+  border-radius: 12px !important;
+  max-width: 346px !important;
+  min-width: 346px !important;
+  min-height: 512px !important;
+  max-height: 512px !important;
 }
 
-.projects .p-prosperia-invest .card a {
-    height: 100% !important;
-    display: block !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
+.p-prosperia-invest .card a {
+  height: 100% !important;
+  display: block !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
 }
 
 img.one-whole {
-    border-radius: 12px 12px 0 0 !important;
-    height: 210px !important;
+  border-radius: 12px 12px 0 0 !important;
+  height: 210px !important;
 }
-.projects .card {
-    border-radius: 12px !important;;
+.card {
+  border-radius: 12px !important;
 }
-.projects .card-header {
-    position: relative !important;
+.card-header {
+  position: relative !important;
 }
 
-.projects .card-image {
-    position: relative !important;
-    border-radius: 12px 12px 0 0 !important;
+.card-image {
+  position: relative !important;
+  border-radius: 12px 12px 0 0 !important;
 }
 
 .neodual-category {
-    position: absolute !important;
-    bottom: 10px !important;
-    left: 10px !important;
-    background: #F0BA58 !important;
-    padding: 5px 10px !important;
-    border-radius: 6px !important;
-    font-weight: bold !important;
-    min-height: 28px !important;
-    font-size: 13px !important;
+  position: absolute !important;
+  bottom: 10px !important;
+  left: 10px !important;
+  background: #f0ba58 !important;
+  padding: 5px 10px !important;
+  border-radius: 6px !important;
+  font-weight: bold !important;
+  min-height: 28px !important;
+  font-size: 13px !important;
 }
 
 .neodual-category:empty {
-    display: none !important;
+  display: none !important;
 }
 
 .neodual-card-content {
-    padding: 18px !important;
-    color: #24372A !important;
-    margin-top: 200px !important;
-    background-color: #F6F1D5 !important;
+  padding: 18px !important;
+  color: #24372a !important;
+  margin-top: 200px !important;
+  background-color: #f6f1d5 !important;
 }
 
 .neodual-card-content .push--top {
-    margin-top: 0 !important;
+  margin-top: 0 !important;
 }
 
 .neodual-address_city {
-    font-size: 24px !important;
-    font-weight: 700 !important;
-    display: inline !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  display: inline !important;
 }
 .neodual-address_city {
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
-    white-space: nowrap;
-  }
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
+}
 
-  .neodual-address_city::before {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 10px;
-    height: 100%;
-    background-color: #F6F1D5;
-    z-index: 1;
-  }
+.neodual-address_city::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 10px;
+  height: 100%;
+  background-color: #f6f1d5;
+  z-index: 1;
+}
 
 .neodual-project-user {
-    display: none !important;
+  display: none !important;
 }
 
 .neodual-about-box {
-    font-size: 18px !important;
-    font-weight: 400 !important;
-    min-height: 28px !important;
-    margin-top: 0 !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  min-height: 28px !important;
+  margin-top: 0 !important;
 }
 
 .neodual-status > div::after {
-    content: "Découvrir";
-    display: flex;
-    height: 30px;
-    background-color: #24372A !important;
-    color: white;
-    margin: 12px auto;
-    border-radius: 6px;
-    width: 80%;
-    align-items: center;
-    justify-content: center;
+  content: "Découvrir";
+  display: flex;
+  height: 30px;
+  background-color: #24372a !important;
+  color: white;
+  margin: 12px auto;
+  border-radius: 6px;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
 }
 .neodual-goal {
-    position: absolute !important;
-    bottom: 18px !important;
-    margin: 0 !important;
-    width: 90% !important;
+  position: absolute !important;
+  bottom: 18px !important;
+  margin: 0 !important;
+  width: 90% !important;
 }
 
 .neodual-goal .progress-bar {
-    border-radius: 6px !important;
-    height: 20px !important;
-    background-color: #24372A !important;
-    margin-top: 0px !important;
-    width: 100% !important;
+  border-radius: 6px !important;
+  height: 20px !important;
+  background-color: #24372a !important;
+  margin-top: 0px !important;
+  width: 100% !important;
 }
-.progress-bar {
-    height: 20px !important;
-}
+
 .progress-bar .bar {
-    border-radius: 6px !important;
-    height: 20px !important;
-    background-color: #F0BA58 !important;
-    font-size: 0;
+  border-radius: 6px !important;
+  height: 20px !important;
+  background-color: #f0ba58 !important;
+  font-size: 0;
 }
 .neodual-bar-stripped {
-    background-image: none !important;
+  background-image: none !important;
 }
 .neodual-status .background_color_security,
 .neodual-status .background_color_equity {
-    background-color: #F6F1D5 !important;
-    padding: 0 18px !important;
+  background-color: #f6f1d5 !important;
+  padding: 0 18px !important;
 }
 .neodual-status .background_color_security .neodual-flex-box,
 .neodual-status .background_color_equity .neodual-flex-box {
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: flex-start!important;
-    text-align: center !important;
-    flex-direction: column!important;
-    margin: 0 !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+  text-align: center !important;
+  flex-direction: column !important;
+  margin: 0 !important;
 }
 
 .neodual-type-security {
-    min-width: 100px !important;
-    padding: 0 !important;
-    flex-direction: row !important;
-    gap: 6px !important;
+  min-width: 100px !important;
+  padding: 0 !important;
+  flex-direction: row !important;
+  gap: 6px !important;
 }
 
 .text_type_group {
-    color: #24372A !important;
+  color: #24372a !important;
 }
 .neodual-type-security .text_type_group:first-of-type::after {
-    content: " : " !important;
+  content: " : " !important;
 }
 .neodual-type-security:has(div)::before {
-    content: url('https://img.icons8.com/?size=20&id=11208&format=png&color=F0BA58');
-    display: inline-block;
-    margin-right: 8px;
+  content: url("https://img.icons8.com/?size=20&id=11208&format=png&color=F0BA58");
+  display: inline-block;
+  margin-right: 8px;
 }
