@@ -6,15 +6,18 @@
   padding: 12px 16px;
   color: #1e3e36 !important;
 }
-#grid_horizontal_share_project .grid__item:nth-of-type(1) {
+#grid_horizontal_share_project > .grid__item:nth-of-type(1) {
   width: 70% !important;
 }
 
-#grid_horizontal_share_project .grid__item:nth-of-type(2) {
+#grid_horizontal_share_project > .grid__item:nth-of-type(2) {
   width: 30% !important;
 }
 #grid_horizontal_share_project .grid__item:nth-of-type(2) .card {
-  background-color: #f7f3db;
+  max-width: none !important;
+  min-width: auto !important;
+  min-height: auto !important;
+  max-height: none !important;
 }
 #section_nav_project .nav .nav_menu_align .menu-item.active {
   border-color: #1e3e36 !important;
@@ -55,13 +58,6 @@
 }
 .inside-project-status .grid .grid__item .text--center {
   text-align: left !important;
-}
-#grid_horizontal_share_project .grid__item:nth-of-type(1) {
-  width: 70% !important;
-}
-
-#grid_horizontal_share_project .grid__item:nth-of-type(2) {
-  width: 30% !important;
 }
 
 .inside-project-status .grid .grid__item:has(div)::before {
