@@ -13,7 +13,7 @@
 #grid_horizontal_share_project > .grid__item:nth-of-type(2) {
   width: 30% !important;
 }
-#grid_horizontal_share_project .grid__item:nth-of-type(2) .card {
+#grid_horizontal_share_project > .grid__item:nth-of-type(2) .card {
   max-width: none !important;
   min-width: auto !important;
   min-height: auto !important;
