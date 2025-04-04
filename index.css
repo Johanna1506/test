@@ -1,10 +1,17 @@
-@import url('./box-project.css');
-@import url('./nav.css');
-@import url('./projects-page.css');
-@import url('./project-page.css');
-@import url('./login.css');
+@import url("./box-project.css");
+@import url("./nav.css");
+@import url("./projects-page.css");
+@import url("./project-page.css");
+@import url("./login.css");
+@font-face {
+  font-family: "centurygothic";
+  src: url("./fonts/centurygothic.ttf") format("truetype"),
+    url("./fonts/centurygothic_bold.ttf") format("truetype");
+  font-weight: 400, 700;
+  font-style: normal;
+}
 
-#logo_text{
+#logo_text {
   color: #f49712;
 }
 
@@ -27,22 +34,20 @@
   color: #efefef;
 }
 
-
-  .security-status {
-    border-radius: 0.75rem !important;
-    color: #f9f7e8 !important;
- }
-  .security-box-project-name {
-    color: #373737 !important;
+.security-status {
+  border-radius: 0.75rem !important;
+  color: #f9f7e8 !important;
+}
+.security-box-project-name {
+  color: #373737 !important;
 }
 
 .security-box-project-user-name {
-    color: #373737 !important;
+  color: #373737 !important;
 }
 
-
 .btn in-box-security-project {
-    background-color: #f0ba58 !important;
+  background-color: #f0ba58 !important;
 }
 
 .project-statistic--small {
@@ -78,7 +83,7 @@
 }
 
 #header {
-	background-color: #1e3e36;
+  background-color: #1e3e36;
 }
 
 #section_label {
@@ -95,12 +100,12 @@
 }
 
 @media screen and (max-width: 600px) {
-    #header_text {
+  #header_text {
     position: static;
     display: block;
     margin: 0 auto;
     padding: 5px;
     font-size: 16px;
     color: #4d6e80;
-    }
- }
+  }
+}
