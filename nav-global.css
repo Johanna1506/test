@@ -12,15 +12,21 @@
   font-weight: 700;
   font-style: normal;
 }
+
 body {
   margin: 0;
   background-color: #f6f1d5;
   color: #24372a;
   font-family: "centurygothic", Arial, sans-serif;
 }
-
+.header-nav-prosperia pre,
+.header-nav-prosperia code {
+  font-family: "centurygothic", Arial, sans-serif !important;
+  font-size: 16px !important;
+  margin: 0 !important;
+}
 /* Styles de base pour la barre de navigation */
-nav {
+.header-nav-prosperia nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,18 +34,18 @@ nav {
   color: white;
   padding: 6px 20px;
   height: 70px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   font-family: "centurygothic", Arial, sans-serif;
 }
 
 /* Logo */
-.logo {
+.header-nav-prosperia .logo {
   display: flex;
   align-items: center;
 }
 
 /* Style des liens de navigation */
-.nav-links {
+.header-nav-prosperia .nav-links {
+  max-width: 1080px;
   display: flex;
   list-style: none;
   top: 0;
@@ -48,14 +54,14 @@ nav {
   height: 100%;
 }
 
-.nav-links li {
+.header-nav-prosperia .nav-links li {
   position: relative;
   height: 100%;
   display: flex;
   align-items: center;
 }
 
-.nav-links a {
+.header-nav-prosperia .nav-links a {
   color: white;
   text-decoration: none;
   padding: 0 15px;
@@ -68,22 +74,22 @@ nav {
   letter-spacing: 0.2px;
 }
 
-.nav-links a:hover {
+.header-nav-prosperia .nav-links a:hover {
   color: #f0ba58;
 }
 
-/* Style du dropdown */
-.dropdown {
+/* Style du drop-down */
+.header-nav-prosperia .drop-down {
   position: relative;
 }
 
-.dropdown-toggle {
+.header-nav-prosperia .drop-down-toggle {
   position: relative;
   padding-right: 30px !important;
 }
 
 /* Ajout de la flèche SVG avec CSS */
-.dropdown-toggle::after {
+.header-nav-prosperia .drop-down-toggle::after {
   content: "";
   position: absolute;
   right: 10px;
@@ -98,18 +104,17 @@ nav {
 }
 
 /* Rotation de la flèche au survol et changement de couleur */
-.dropdown:hover .dropdown-toggle::after {
+.header-nav-prosperia .drop-down:hover .drop-down-toggle::after {
   transform: translateY(-50%) rotate(270deg);
   background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.11807 7.61797C7.45986 7.27617 7.45986 6.72109 7.11807 6.3793L1.86807 1.1293C1.52627 0.787499 0.971191 0.787499 0.629395 1.1293C0.287598 1.47109 0.287598 2.02617 0.629395 2.36797L5.26143 7L0.632129 11.632C0.290332 11.9738 0.290332 12.5289 0.632129 12.8707C0.973926 13.2125 1.529 13.2125 1.8708 12.8707L7.1208 7.6207L7.11807 7.61797Z' fill='%23f0ba58'%3E%3C/path%3E%3C/svg%3E");
 }
 
-.dropdown-menu {
+.header-nav-prosperia .drop-down-menu {
   position: absolute;
   top: 100%;
   left: 0;
   background-color: #1e3e36;
   min-width: 200px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
@@ -122,55 +127,56 @@ nav {
   overflow: hidden;
 }
 
-.dropdown-menu li {
+.header-nav-prosperia .drop-down-menu li {
   width: 100%;
   height: auto;
 }
 
-.dropdown-menu a {
+.header-nav-prosperia .drop-down-menu a {
   padding: 12px 20px;
   width: 100%;
 }
 
-.dropdown-menu a:hover {
+.header-nav-prosperia .drop-down-menu a:hover {
   color: #f0ba58;
 }
 
-/* Logique pour afficher le dropdown au hover */
-.dropdown:hover .dropdown-menu {
+/* Logique pour afficher le drop-down au hover */
+.header-nav-prosperia .drop-down:hover .drop-down-menu {
   opacity: 1;
   visibility: visible;
+  display: block;
   transform: translateY(0);
 }
 
 /* Style du bouton login */
-.nav-links .btn-login,
-.btn-login {
+.header-nav-prosperia .nav-links .btn-login,
+.header-nav-prosperia .btn-login {
   background-color: #f0ba58;
   color: #ffffff;
   text-decoration: none;
   padding: 12px 20px;
   border-radius: 10px;
   text-align: center;
-  height: auto;
+  height: 50px;
 }
 
-.logo + .btn-login {
+.header-nav-prosperia .logo + .btn-login {
   display: none;
 }
 
-.nav-links .btn-login:hover {
+.header-nav-prosperia .nav-links .btn-login:hover {
   background-color: #5e8b7a;
   color: #ffffff;
 }
 
 /* Responsive adjustments */
 /* === BURGER MENU - SANS JS === */
-#menu-toggle {
+.header-nav-prosperia #menu-toggle {
   display: none;
 }
 
-.burger {
+.header-nav-prosperia .burger {
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -180,7 +186,7 @@ nav {
   gap: 5px;
 }
 
-.burger span {
+.header-nav-prosperia .burger span {
   display: block;
   height: 3px;
   width: 100%;
@@ -190,12 +196,12 @@ nav {
 }
 
 /* Menu burger input caché */
-#menu-toggle {
+.header-nav-prosperia #menu-toggle {
   display: none;
 }
 
 /* Bouton burger */
-.burger {
+.header-nav-prosperia .burger {
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -205,7 +211,7 @@ nav {
   z-index: 200;
 }
 
-.burger span {
+.header-nav-prosperia .burger span {
   display: block;
   height: 3px;
   background: white;
@@ -213,16 +219,69 @@ nav {
   transition: all 0.3s ease;
 }
 
+main,
+footer {
+  padding: 18px;
+}
+
+/* === MENU PERSONNALISÉ MIPISE === */
+.header-locale {
+  display: none !important;
+}
+.personalized_menu_right {
+  display: none !important;
+}
+
+#desktop_default_client_space:not(:empty) ~ .personalized_menu_right,
+#desktop_default_client_space:not([style*="display: none"])
+  ~ .personalized_menu_right,
+a#desktop_default_client_space ~ .personalized_menu_right {
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 1000;
+}
+
+#desktop_default_client_space:not(:empty) ~ .btn-login,
+#desktop_default_client_space:not([style*="display: none"]) ~ .btn-login,
+a#desktop_default_client_space ~ .btn-login {
+  display: none;
+}
+
+.personalized_menu_right:not([style*="display: none"]) ~ .nav-links .btn-login,
+.personalized_menu_right:not(:empty) ~ .nav-links .btn-login {
+  display: none;
+}
+
+#desktop_default_client_space:not(:empty) ~ * .btn-login,
+#desktop_default_client_space:not([style*="display: none"]) ~ * .btn-login {
+  display: none;
+}
+
+body:has(#desktop_default_client_space) .personalized_menu_right {
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 1000;
+}
+
+body:has(#desktop_default_client_space) .btn-login {
+  display: none;
+}
+
 /* Affichage en mobile */
 @media (max-width: 768px) {
-  .logo {
+  .header-nav-prosperia .logo {
     z-index: 200;
   }
-  .burger {
+  .header-nav-prosperia .burger {
     display: flex;
   }
 
-  .nav-links {
+  .header-nav-prosperia .nav-links {
+    overflow: scroll;
     position: fixed;
     top: 82px;
     left: 0;
@@ -237,24 +296,24 @@ nav {
     z-index: 100;
   }
 
-  #menu-toggle:checked ~ .nav-links {
+  .header-nav-prosperia #menu-toggle:checked ~ .nav-links {
     transform: translateY(0);
   }
 
   /* Animation croix */
-  #menu-toggle:checked + .burger span:nth-child(1) {
+  .header-nav-prosperia #menu-toggle:checked + .burger span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 7px);
   }
 
-  #menu-toggle:checked + .burger span:nth-child(2) {
+  .header-nav-prosperia #menu-toggle:checked + .burger span:nth-child(2) {
     opacity: 0;
   }
 
-  #menu-toggle:checked + .burger span:nth-child(3) {
+  .header-nav-prosperia #menu-toggle:checked + .burger span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -7px);
   }
 
-  .nav-links li {
+  .header-nav-prosperia .nav-links li {
     width: 100%;
     height: 50px;
     text-align: center;
@@ -262,27 +321,27 @@ nav {
     align-items: flex-start;
     flex-direction: column;
   }
-  .dropdown:hover {
+  .header-nav-prosperia .drop-down:hover {
     height: auto;
   }
-  .btn-login {
+  .header-nav-prosperia .btn-login {
     margin: 0 auto;
   }
 
-  .nav-links a {
+  .header-nav-prosperia .nav-links a {
     font-size: 20px;
     height: auto;
     padding: 20px;
   }
-  .dropdown:hover .dropdown-menu {
+  .header-nav-prosperia .drop-down:hover .drop-down-menu {
     position: initial;
     box-shadow: none;
     margin-left: 16px;
   }
-  .nav-links .btn-login {
+  .header-nav-prosperia .nav-links .btn-login {
     display: none;
   }
-  .logo + .btn-login {
+  .header-nav-prosperia .logo + .btn-login {
     display: block;
     z-index: 200;
   }
