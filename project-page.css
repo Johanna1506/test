@@ -79,3 +79,32 @@
   gap: 6px;
   align-items: flex-start;
 }
+#project-navbar-desktop {
+  background-color: #f6f1d5 !important;
+  padding: 12px 6px;
+}
+.header-project-menu--desktop .grid--full {
+  display: flex;
+  align-items: center;
+}
+#section_nav_project .nav .nav_menu_align .menu-item {
+  border: none !important;
+  border-radius: 6px !important;
+}
+#section_nav_project .nav .nav_menu_align .menu-item.active {
+  background: #f0ba58 !important;
+  color: white !important;
+}
+#section_nav_project .nav .nav_menu_align .menu-item:hover {
+  background: #f9e3bc !important;
+}
+#statistics_project .card {
+  max-width: none !important;
+  min-width: auto !important;
+  min-height: auto !important;
+  max-height: none !important;
+}
+#statistics_project .card .progress-bar {
+  height: 20px !important;
+  border-radius: 6px;
+}
