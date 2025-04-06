@@ -108,6 +108,9 @@
 .inside-project-financial-data::before {
   content: "Rendement cible*";
 }
+.reward_tag_title {
+  text-align: start !important;
+}
 .reward_btn--tag a {
   background: #f0ba58 !important;
   color: white !important;
@@ -115,6 +118,10 @@
   border-radius: 6px !important;
   font-weight: bold !important;
   min-height: 28px !important;
+  width: fit-content !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
 }
 #project-navbar-desktop {
   background-color: #f6f1d5 !important;
