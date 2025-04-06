@@ -50,6 +50,9 @@
   margin: 60px 0 0 0 !important;
   box-shadow: none !important;
 }
+body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
+  padding-bottom: 62px !important;
+}
 
 #horizontal_card_project .inside-project-name {
   margin: 12px 0 !important;
@@ -149,13 +152,21 @@
   margin-right: 10px !important;
 }
 #statistics_project .horizontal_statistics.card {
-  display: none !important;
   position: initial !important;
+  background-color: transparent !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+#statistics_project .horizontal_statistics.card .title_horizontal_statistics,
+#statistics_project .horizontal_statistics.card .horizontal_expires_at {
+  display: none !important;
 }
 .horizontal_statistics .progress-bar {
   max-width: 200px !important;
   position: absolute !important;
-  top: 0 !important;
+  top: 417px !important;
+  z-index: 9999;
 }
 #project-navbar-desktop {
   background-color: #f6f1d5 !important;
