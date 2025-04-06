@@ -36,7 +36,7 @@
   white-space: nowrap;
 }
 
-body.p-prosperia-invest .card {
+.project-box .card {
   background-color: #f6f1d5 !important;
   max-width: 346px !important;
   min-width: 346px !important;
@@ -53,7 +53,7 @@ body.p-prosperia-invest .card {
   max-height: 512px !important;
 }
 
-.p-prosperia-invest .card a {
+.project-box .card a {
   height: 100% !important;
   display: block !important;
   position: absolute !important;
@@ -67,14 +67,14 @@ img.one-whole {
   border-radius: 12px 12px 0 0 !important;
   height: 210px !important;
 }
-.card {
+.project-box .card {
   border-radius: 12px !important;
 }
-.card-header {
+.project-box .card .card-header {
   position: relative !important;
 }
 
-.card-image {
+.project-box .card .card-image {
   position: relative !important;
   border-radius: 12px 12px 0 0 !important;
 }

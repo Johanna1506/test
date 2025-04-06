@@ -259,8 +259,7 @@ li:has(#desktop_default_client_space):hover::after {
 }
 
 .personalized_menu_user_space {
-  background-color: #1e3e36;
-  background-color: #1e3e36;
+  background-color: #1e3e36 !important;
   min-width: 200px;
   padding: 6px;
   margin: 0;
