@@ -96,7 +96,8 @@
 .inside-project-status .grid .grid__item div {
   display: flex !important;
   flex-direction: row-reverse !important;
-  justify-content: flex-start;
+  justify-content: flex-start !important;
+  align-items: center !important;
   width: auto !important;
   gap: 6px;
   align-items: flex-start;
