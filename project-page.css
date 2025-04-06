@@ -42,9 +42,10 @@
 
 #horizontal_card_project {
   background-color: #f6f1d5 !important;
-  border-radius: 6px !important;
+  border-radius: 6px 6px 0 0 !important;
   color: #24372a !important;
-  margin-top: 60px !important;
+  margin: 60px 0 0 0 !important;
+  box-shadow: none !important;
 }
 #horizontal_card_project .inside-project-name {
   margin: 12px 0 !important;
@@ -54,6 +55,9 @@
 #horizontal_card_project .inside-project-tags .inside-project-localization,
 .inside-project-owner {
   display: none !important;
+}
+.inside-project-financial-data {
+  text-align: start !important;
 }
 #horizontal_card_project .inside-project-tags a {
   background: #f0ba58 !important;
@@ -87,9 +91,8 @@
 }
 .inside-project-status .grid .grid__item div {
   display: flex !important;
-  flex-direction: row !important;
+  flex-direction: row-reverse !important;
   justify-content: flex-start;
-  flex-direction: row-reverse;
   width: auto !important;
   gap: 6px;
   align-items: flex-start;
