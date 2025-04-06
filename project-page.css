@@ -50,6 +50,19 @@
   margin: 12px 0 !important;
   font-size: 24px !important;
 }
+#horizontal_card_project .inside-project-tags .fa-tag,
+#horizontal_card_project .inside-project-tags .inside-project-localization,
+.inside-project-owner {
+  display: none !important;
+}
+#horizontal_card_project .inside-project-tags a {
+  background: #f0ba58 !important;
+  padding: 5px 10px !important;
+  border-radius: 6px !important;
+  font-weight: bold !important;
+  min-height: 28px !important;
+  font-size: 13px !important;
+}
 .inside-project-status .grid {
   display: flex !important;
   flex-direction: column;
