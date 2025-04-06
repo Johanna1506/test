@@ -145,8 +145,17 @@
   justify-content: flex-start !important;
 }
 .infos-rewards .info-rewards .bulletpoint::before {
-  content: url("https://img.icons8.com/?size=10&id=86016&format=png&color=000000") !important;
-  margin-right: 2px !important;
+  content: url("https://img.icons8.com/material-sharp/10/filled-circle.png") !important;
+  margin-right: 10px !important;
+}
+.horizontal_statistics {
+  display: none !important;
+  position: initial !important;
+}
+.horizontal_statistics .progress-bar {
+  max-width: 200px !important;
+  position: absolute !important;
+  top: 0 !important;
 }
 #project-navbar-desktop {
   background-color: #f6f1d5 !important;
