@@ -86,7 +86,7 @@
 .inside-project-status .grid .grid__item {
   display: flex !important;
   flex-direction: row !important;
-  align-items: start !important;
+  align-items: center !important;
   width: auto !important;
 }
 .inside-project-status .grid .grid__item div {
@@ -102,11 +102,19 @@
   color: #24372a !important;
   font-weight: bold !important;
 }
-.inside-project-status .grid .grid__item div .milli::after {
+.inside-project-status .grid .grid__item div .milli::before {
   content: " : " !important;
 }
 .inside-project-financial-data::before {
   content: "Rendement cible*";
+}
+.reward_btn--tag a {
+  background: #f0ba58 !important;
+  color: white !important;
+  padding: 5px 10px !important;
+  border-radius: 6px !important;
+  font-weight: bold !important;
+  min-height: 28px !important;
 }
 #project-navbar-desktop {
   background-color: #f6f1d5 !important;
