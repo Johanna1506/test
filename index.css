@@ -20,7 +20,15 @@
 body {
   font-family: "centurygothic", Arial, sans-serif !important;
 }
-
+.button-wrapper a {
+  background-color: #f0ba58 !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  padding: 12px 20px !important;
+  border-radius: 10px !important;
+  text-align: center !important;
+  height: 50px;
+}
 #logo_text {
   color: #f49712;
 }
