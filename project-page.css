@@ -123,6 +123,12 @@
   align-items: center !important;
   justify-content: flex-start !important;
 }
+
+.infos-rewards .info-rewards h2 {
+  font-size: 20px !important;
+  margin-bottom: 16px !important;
+  margin-top: 20px !important;
+}
 #project-navbar-desktop {
   background-color: #f6f1d5 !important;
   padding: 12px 6px;
