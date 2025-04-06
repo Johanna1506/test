@@ -1,4 +1,3 @@
-/* Déclaration de la police Century Gothic */
 @font-face {
   font-family: "centurygothic";
   src: url("./fonts/centurygothic.ttf") format("truetype");
@@ -25,7 +24,6 @@ body {
   font-size: 16px !important;
   margin: 0 !important;
 }
-/* Styles de base pour la barre de navigation */
 .header-nav-prosperia nav {
   display: flex;
   justify-content: space-between;
@@ -36,14 +34,10 @@ body {
   height: 70px;
   font-family: "centurygothic", Arial, sans-serif;
 }
-
-/* Logo */
 .header-nav-prosperia .logo {
   display: flex;
   align-items: center;
 }
-
-/* Style des liens de navigation */
 .header-nav-prosperia .nav-links {
   max-width: 1080px;
   display: flex;
@@ -53,14 +47,12 @@ body {
   padding: 0;
   height: 100%;
 }
-
 .header-nav-prosperia .nav-links li {
   position: relative;
   height: 100%;
   display: flex;
   align-items: center;
 }
-
 .header-nav-prosperia .nav-links a {
   color: white;
   text-decoration: none;
@@ -73,12 +65,9 @@ body {
   font-size: 15px;
   letter-spacing: 0.2px;
 }
-
 .header-nav-prosperia .nav-links a:hover {
   color: #f0ba58;
 }
-
-/* Style du drop-down */
 .header-nav-prosperia .drop-down {
   position: relative;
 }
@@ -87,8 +76,6 @@ body {
   position: relative;
   padding-right: 30px !important;
 }
-
-/* Ajout de la flèche SVG avec CSS */
 .header-nav-prosperia .drop-down-toggle::after {
   content: "";
   position: absolute;
@@ -102,13 +89,10 @@ body {
   background-position: center;
   transition: transform 0.3s ease, background-image 0.3s ease;
 }
-
-/* Rotation de la flèche au survol et changement de couleur */
 .header-nav-prosperia .drop-down:hover .drop-down-toggle::after {
   transform: translateY(-50%) rotate(270deg);
   background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.11807 7.61797C7.45986 7.27617 7.45986 6.72109 7.11807 6.3793L1.86807 1.1293C1.52627 0.787499 0.971191 0.787499 0.629395 1.1293C0.287598 1.47109 0.287598 2.02617 0.629395 2.36797L5.26143 7L0.632129 11.632C0.290332 11.9738 0.290332 12.5289 0.632129 12.8707C0.973926 13.2125 1.529 13.2125 1.8708 12.8707L7.1208 7.6207L7.11807 7.61797Z' fill='%23f0ba58'%3E%3C/path%3E%3C/svg%3E");
 }
-
 .header-nav-prosperia .drop-down-menu {
   position: absolute;
   top: 100%;
@@ -126,30 +110,23 @@ body {
   border-radius: 0 0 10px 10px;
   overflow: hidden;
 }
-
 .header-nav-prosperia .drop-down-menu li {
   width: 100%;
   height: auto;
 }
-
 .header-nav-prosperia .drop-down-menu a {
   padding: 12px 20px;
   width: 100%;
 }
-
 .header-nav-prosperia .drop-down-menu a:hover {
   color: #f0ba58;
 }
-
-/* Logique pour afficher le drop-down au hover */
 .header-nav-prosperia .drop-down:hover .drop-down-menu {
   opacity: 1;
   visibility: visible;
   display: block;
   transform: translateY(0);
 }
-
-/* Style du bouton login */
 .header-nav-prosperia .nav-links .btn-login,
 .header-nav-prosperia .btn-login {
   background-color: #f0ba58;
@@ -160,18 +137,14 @@ body {
   text-align: center;
   height: 50px;
 }
-
 .header-nav-prosperia .logo + .btn-login {
   display: none;
 }
-
 .header-nav-prosperia .nav-links .btn-login:hover {
   background-color: #5e8b7a;
   color: #ffffff;
 }
-
-/* Responsive adjustments */
-/* === BURGER MENU - SANS JS === */
+/* === BURGER MENU === */
 .header-nav-prosperia #menu-toggle {
   display: none;
 }
@@ -194,13 +167,9 @@ body {
   transition: all 0.3s ease;
   border-radius: 2px;
 }
-
-/* Menu burger input caché */
 .header-nav-prosperia #menu-toggle {
   display: none;
 }
-
-/* Bouton burger */
 .header-nav-prosperia .burger {
   display: none;
   flex-direction: column;
@@ -210,7 +179,6 @@ body {
   cursor: pointer;
   z-index: 200;
 }
-
 .header-nav-prosperia .burger span {
   display: block;
   height: 3px;
@@ -218,7 +186,6 @@ body {
   border-radius: 3px;
   transition: all 0.3s ease;
 }
-
 main,
 footer {
   padding: 18px;
@@ -261,7 +228,7 @@ body:has(#desktop_default_client_space) .nav-links {
   transform: translateY(-50%);
   z-index: 1000;
 }
-.markdown_platform_manager_space {
+#markdown_platform_manager_space {
   position: fixed;
   top: 36px;
   right: 0;
@@ -274,7 +241,24 @@ body:has(#desktop_default_client_space) .nav-links {
   display: none;
 }
 
-/* Affichage en mobile */
+#desktop_default_client_space ~ li::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  width: 8px;
+  height: 14px;
+  transform: translateY(-50%) rotate(90deg);
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.11807 7.61797C7.45986 7.27617 7.45986 6.72109 7.11807 6.3793L1.86807 1.1293C1.52627 0.787499 0.971191 0.787499 0.629395 1.1293C0.287598 1.47109 0.287598 2.02617 0.629395 2.36797L5.26143 7L0.632129 11.632C0.290332 11.9738 0.290332 12.5289 0.632129 12.8707C0.973926 13.2125 1.529 13.2125 1.8708 12.8707L7.1208 7.6207L7.11807 7.61797Z' fill='white'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.3s ease, background-image 0.3s ease;
+}
+
+#desktop_default_client_space ~ li:hover::after {
+  transform: translateY(-50%) rotate(270deg);
+}
+
 @media (max-width: 768px) {
   .header-nav-prosperia .logo {
     z-index: 200;
@@ -303,7 +287,6 @@ body:has(#desktop_default_client_space) .nav-links {
     transform: translateY(0);
   }
 
-  /* Animation croix */
   .header-nav-prosperia #menu-toggle:checked + .burger span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 7px);
   }
