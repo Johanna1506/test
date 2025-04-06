@@ -165,7 +165,7 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
 .horizontal_statistics .progress-bar {
   max-width: 200px !important;
   position: absolute !important;
-  top: 417px !important;
+  top: 426px !important;
   z-index: 9999;
 }
 #project-navbar-desktop {
