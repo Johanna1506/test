@@ -104,7 +104,6 @@ body {
   transform: translateY(10px);
   transition: all 0.3s ease;
   z-index: 100;
-  list-style: none;
   padding: 5px 0;
   margin: 0;
   border-radius: 0 0 10px 10px;
@@ -224,7 +223,7 @@ body:has(#desktop_default_client_space) .nav-links {
   display: block;
   position: absolute;
   top: 50%;
-  right: 20px;
+  right: 26px;
   transform: translateY(-50%);
   z-index: 1000;
 }
@@ -244,7 +243,7 @@ body:has(#desktop_default_client_space) .nav-links {
 li:has(#desktop_default_client_space)::after {
   content: "";
   position: absolute;
-  right: 10px;
+  right: -10px;
   top: 50%;
   width: 8px;
   height: 14px;
@@ -257,6 +256,23 @@ li:has(#desktop_default_client_space)::after {
 
 li:has(#desktop_default_client_space):hover::after {
   transform: translateY(-50%) rotate(270deg);
+}
+
+.personalized_menu_user_space {
+  background-color: #1e3e36;
+  background-color: #1e3e36;
+  min-width: 200px;
+  padding: 6px;
+  margin: 0;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+}
+ul.menu_user_space a,
+ul.menu_user_space strong {
+  padding: 6px 0;
+}
+body.p-prosperia-invest ul.menu_user_space a:hover {
+  color: #f0ba58 !important;
 }
 
 @media (max-width: 768px) {
