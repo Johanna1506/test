@@ -113,6 +113,9 @@
 .inside-project-financial-data::before {
   content: "Rendement cible*";
 }
+#show_tags {
+  padding: 0 !important;
+}
 .reward_tag_title {
   text-align: start !important;
 }
