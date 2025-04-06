@@ -347,4 +347,19 @@ body.p-prosperia-invest ul.menu_user_space a:hover {
     display: block;
     z-index: 200;
   }
+
+  /* MIPISE BUGER MENU PERSONALISATION */
+
+  #header {
+    display: none !important;
+  }
+  #header-desktop {
+    display: contents !important;
+  }
+  body:has(#desktop_default_client_space) .personalized_menu_right {
+    display: none !important;
+  }
+  #menu-toggle:checked ~ .personalized_menu_right {
+    display: block !important;
+  }
 }
