@@ -345,6 +345,7 @@ body.p-prosperia-invest ul.menu_user_space a:hover {
   .header-nav-prosperia .logo + .btn-login {
     display: block;
     z-index: 200;
+    font-size: 16px !important;
   }
 
   /* MIPISE BUGER MENU PERSONALISATION */
@@ -358,7 +359,7 @@ body.p-prosperia-invest ul.menu_user_space a:hover {
   body:has(#desktop_default_client_space) .personalized_menu_right {
     display: none !important;
   }
-  #menu-toggle:checked ~ .personalized_menu_right {
+  /* #menu-toggle:checked ~ .personalized_menu_right {
     display: block !important;
-  }
+  } */
 }
