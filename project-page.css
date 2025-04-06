@@ -57,6 +57,7 @@
 }
 #horizontal_card_project .inside-project-tags a {
   background: #f0ba58 !important;
+  color: white !important;
   padding: 5px 10px !important;
   border-radius: 6px !important;
   font-weight: bold !important;
@@ -88,9 +89,21 @@
   display: flex !important;
   flex-direction: row !important;
   justify-content: flex-start;
+  flex-direction: row-reverse;
   width: auto !important;
   gap: 6px;
   align-items: flex-start;
+}
+.inside-project-status .grid .grid__item div .milli {
+  font-size: 16px !important;
+  color: #24372a !important;
+  font-weight: bold !important;
+}
+.inside-project-status .grid .grid__item div .milli::after {
+  content: " : " !important;
+}
+.inside-project-financial-data::before {
+  content: "Rendement cible*";
 }
 #project-navbar-desktop {
   background-color: #f6f1d5 !important;
