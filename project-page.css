@@ -148,7 +148,7 @@
   content: url("https://img.icons8.com/material-sharp/10/filled-circle.png") !important;
   margin-right: 10px !important;
 }
-.horizontal_statistics {
+#statistics_project .horizontal_statistics.card {
   display: none !important;
   position: initial !important;
 }
