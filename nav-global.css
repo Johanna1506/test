@@ -228,28 +228,26 @@ footer {
 .personalized_menu_right .header-locale {
   display: none !important;
 }
-/* Solution de base pour cacher personalized_menu_right si desktop_default_client_space n'existe pas */
 .personalized_menu_right {
   display: none;
 }
 
-/* Si desktop_default_client_space existe, on affiche le menu et on le positionne à la place du bouton login */
 body:has(#desktop_default_client_space) .personalized_menu_right {
   display: block;
   position: absolute;
-  /* Ces valeurs positionnent le menu à la même position que le bouton login */
   top: 50%;
-  right: 20px; /* Ajustez selon la distance du bord droit du bouton login */
-  transform: translateY(-50%); /* Centre verticalement */
+  right: 20px;
+  transform: translateY(-50%);
   z-index: 1000;
 }
 
-/* Pour masquer le bouton login lorsque desktop_default_client_space existe */
 body:has(#desktop_default_client_space) .btn-login {
   display: none;
 }
+body:has(#desktop_default_client_space) .nav-links {
+  margin-right: 150px;
+}
 
-/* Solution alternative pour les navigateurs plus anciens qui ne supportent pas :has() */
 #desktop_default_client_space:not([style*="display: none"])
   ~ *
   .personalized_menu_right {
