@@ -225,8 +225,11 @@ footer {
 }
 
 /* === MENU PERSONNALISÉ MIPISE === */
-.personalized_menu_right .header-locale {
+.personalized_menu_right .header_locale {
   display: none !important;
+}
+.header-right-color {
+  color: #ffffff !important;
 }
 .personalized_menu_right {
   display: none;
@@ -245,7 +248,7 @@ body:has(#desktop_default_client_space) .btn-login {
   display: none;
 }
 body:has(#desktop_default_client_space) .nav-links {
-  margin-right: 150px;
+  margin-right: 200px;
 }
 
 #desktop_default_client_space:not([style*="display: none"])
@@ -257,6 +260,14 @@ body:has(#desktop_default_client_space) .nav-links {
   right: 20px;
   transform: translateY(-50%);
   z-index: 1000;
+}
+.markdown_platform_manager_space {
+  position: fixed;
+  top: 36px;
+  right: 0;
+  background-color: #f0ba58;
+  padding: 12px;
+  color: #ffffff;
 }
 
 #desktop_default_client_space:not([style*="display: none"]) ~ * .btn-login {
