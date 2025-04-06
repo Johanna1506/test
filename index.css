@@ -29,7 +29,8 @@ a,
 li {
   font-family: "centurygothic", Arial, sans-serif !important;
 }
-.button-wrapper a {
+.button-wrapper a,
+.btn {
   background-color: #f0ba58 !important;
   color: #ffffff !important;
   text-decoration: none !important;
