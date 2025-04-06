@@ -241,7 +241,7 @@ body:has(#desktop_default_client_space) .nav-links {
   display: none;
 }
 
-#desktop_default_client_space ~ li::after {
+li:has(#desktop_default_client_space)::after {
   content: "";
   position: absolute;
   right: 10px;
@@ -255,7 +255,7 @@ body:has(#desktop_default_client_space) .nav-links {
   transition: transform 0.3s ease, background-image 0.3s ease;
 }
 
-#desktop_default_client_space ~ li:hover::after {
+li:has(#desktop_default_client_space):hover::after {
   transform: translateY(-50%) rotate(270deg);
 }
 
