@@ -126,8 +126,18 @@
 
 .infos-rewards .info-rewards h2 {
   font-size: 20px !important;
-  margin-bottom: 16px !important;
-  margin-top: 20px !important;
+  font-weight: 700;
+  margin-bottom: 6px !important;
+  margin-top: 30px !important;
+}
+.infos-rewards .info-rewards:has(.bulletpoint) {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+}
+.infos-rewards .info-rewards .bulletpoint {
+  content: url("https://img.icons8.com/?size=100&id=86016&format=png&color=000000") !important;
 }
 #project-navbar-desktop {
   background-color: #f6f1d5 !important;
