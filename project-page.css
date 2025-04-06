@@ -138,10 +138,10 @@
   margin-bottom: 6px !important;
   margin-top: 30px !important;
 }
-.infos-rewards .info-rewards:has(.bulletpoint) {
+.infos-rewards .info-rewards:has(.bulletpoint) p {
   display: flex !important;
   flex-direction: column !important;
-  align-items: center !important;
+  align-items: flex-start !important;
   justify-content: flex-start !important;
 }
 .infos-rewards .info-rewards .bulletpoint {
