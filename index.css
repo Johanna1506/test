@@ -28,6 +28,9 @@ body {
   border-radius: 10px !important;
   text-align: center !important;
   height: 50px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
 }
 #logo_text {
   color: #f49712;
