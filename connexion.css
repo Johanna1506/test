@@ -1,6 +1,11 @@
 .new-session-registration .background-low-color {
   background-color: #ffffff !important;
 }
+@media screen and (max-width: 600px) {
+  .new-session-registration .background-low-color {
+    padding: 0 !important;
+  }
+}
 
 .new-session-registration a {
   color: #1e3e36 !important;
@@ -63,7 +68,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 20px;
 }
 #new_user_session > .text--center br {
   display: none !important;
