@@ -4,6 +4,7 @@
 @import url("./project-page.css");
 @import url("./login.css");
 @import url("./nav-global.css");
+@import url("./connexion.css");
 @font-face {
   font-family: "centurygothic";
   src: url("./fonts/centurygothic.ttf") format("truetype");
