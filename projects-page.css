@@ -1,15 +1,18 @@
 .top_text_zone {
-    background-color: #1e3e36;
-    height: 260px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: #1e3e36;
+  height: 260px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .top_text_zone h1 {
-    font-size: 2.2em;
-    text-align: center;
-    font-weight: bold !important;
-    text-transform: none !important;
+  font-size: 2.2em;
+  text-align: center;
+  font-weight: bold !important;
+  text-transform: none !important;
+}
+.boxslider {
+  background-color: #f6f1d5;
 }
