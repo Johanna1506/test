@@ -37,7 +37,7 @@
 }
 
 .project-box .card {
-  background-color: #f6f1d5 !important;
+  background-color: #fefbf3 !important;
   max-width: 346px !important;
   min-width: 346px !important;
   min-height: 512px !important;
@@ -45,7 +45,7 @@
 }
 .box_project_security,
 .box_project_equity {
-  background-color: #f6f1d5 !important;
+  background-color: #fefbf3 !important;
   border-radius: 12px !important;
   max-width: 346px !important;
   min-width: 346px !important;
@@ -99,7 +99,7 @@ img.one-whole {
   padding: 18px !important;
   color: #24372a !important;
   margin-top: 200px !important;
-  background-color: #f6f1d5 !important;
+  background-color: #fefbf3 !important;
 }
 
 .neodual-card-content .push--top {
@@ -125,7 +125,7 @@ img.one-whole {
   top: 0;
   width: 10px;
   height: 100%;
-  background-color: #f6f1d5;
+  background-color: #fefbf3;
   z-index: 1;
 }
 
@@ -178,7 +178,7 @@ img.one-whole {
 }
 .neodual-status .background_color_security,
 .neodual-status .background_color_equity {
-  background-color: #f6f1d5 !important;
+  background-color: #fefbf3 !important;
   padding: 0 18px !important;
 }
 .neodual-status .background_color_security .neodual-flex-box,
