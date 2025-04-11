@@ -1,3 +1,4 @@
+/* Login */
 .new-session-registration .background-low-color {
   background-color: #ffffff !important;
 }
@@ -80,3 +81,6 @@
 #new_user_session > .text--center > .k-padding-5 {
   order: 3;
 }
+
+/* Sign-in */
+#main-container-registrations-new
