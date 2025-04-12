@@ -4,4 +4,22 @@
 }
 #k_content_body .k-portlet {
   background-color: var(--color-highlight) !important;
+  color: var(--color-primary) !important;
+  border-radius: var(--border-radius-large) !important;
+}
+.k-wizard-v2
+  .k-wizard-v2__nav
+  .k-wizard-v2__nav-items
+  .k-wizard-v2__nav-item
+  span {
+  min-width: 2.7rem;
+  min-height: 2.7rem;
+}
+.k-wizard-v2
+  .k-wizard-v2__nav
+  .k-wizard-v2__nav-items
+  .k-wizard-v2__nav-item[data-kwizard-state="current"]
+  span {
+  background-color: var(--color-primary) !important;
+  color: var(--color-background) !important;
 }
