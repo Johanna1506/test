@@ -122,7 +122,7 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
-  justify-content: center !important;
+  justify-content: flex-start !important;
   gap: var(--spacing-small) !important;
 }
 .reward_tag_title {
