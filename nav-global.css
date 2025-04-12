@@ -143,8 +143,47 @@ body {
   background-color: var(--color-hover);
   color: var(--color-light);
 }
+/* === BURGER MENU === */
+.header-nav-prosperia #menu-toggle {
+  display: none;
+}
+
+.header-nav-prosperia .burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  gap: var(--spacing-small);
+}
+
 .header-nav-prosperia .burger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: var(--color-light);
+  transition: all 0.3s ease;
+  border-radius: var(--border-radius-small);
+}
+.header-nav-prosperia #menu-toggle {
+  display: none;
+}
+.header-nav-prosperia .burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 200;
+}
+.header-nav-prosperia .burger span {
+  display: block;
+  height: 3px;
   background: var(--color-light);
+  border-radius: var(--border-radius-small);
+  transition: all 0.3s ease;
 }
 main,
 footer {
@@ -156,7 +195,7 @@ footer {
   display: none !important;
 }
 .header-right-color {
-  color: #ffffff !important;
+  color: var(--color-light) !important;
 }
 .personalized_menu_right {
   display: none;
@@ -166,7 +205,7 @@ body:has(#desktop_default_client_space) .personalized_menu_right {
   display: block;
   position: absolute;
   top: 50%;
-  right: 20px;
+  right: var(--spacing-large);
   transform: translateY(-50%);
   z-index: 1000;
 }
@@ -184,17 +223,17 @@ body:has(#desktop_default_client_space) .nav-links {
   display: block;
   position: absolute;
   top: 50%;
-  right: 26px;
+  right: var(--spacing-large);
   transform: translateY(-50%);
   z-index: 1000;
 }
 #markdown_platform_manager_space {
   position: fixed;
-  top: 36px;
+  top: var(--spacing-medium);
   right: 0;
-  background-color: #f0ba58;
-  padding: 12px;
-  color: #ffffff;
+  background-color: var(--color-secondary);
+  padding: var(--spacing-medium);
+  color: var(--color-light);
 }
 
 #desktop_default_client_space:not([style*="display: none"]) ~ * .btn-login {
@@ -246,12 +285,12 @@ body.p-prosperia-invest ul.menu_user_space a:hover {
   .header-nav-prosperia .nav-links {
     overflow: scroll;
     position: fixed;
-    top: 82px;
+    top: var(--header-height);
     left: 0;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    background-color: #1e3e36;
+    background-color: var(--color-primary);
     width: 100vw;
     height: 92vh;
     transform: translateY(-100%);
@@ -279,7 +318,7 @@ body.p-prosperia-invest ul.menu_user_space a:hover {
     width: 100%;
     height: 50px;
     text-align: center;
-    margin: 10px 0;
+    margin: var(--spacing-small) 0;
     align-items: flex-start;
     flex-direction: column;
   }
@@ -291,14 +330,14 @@ body.p-prosperia-invest ul.menu_user_space a:hover {
   }
 
   .header-nav-prosperia .nav-links a {
-    font-size: 20px;
+    font-size: var(--font-size-large);
     height: auto;
-    padding: 20px;
+    padding: var(--spacing-large);
   }
   .header-nav-prosperia .drop-down:hover .drop-down-menu {
     position: initial;
     box-shadow: none;
-    margin-left: 16px;
+    margin-left: var(--spacing-medium);
   }
   .header-nav-prosperia .nav-links .btn-login {
     display: none;
@@ -306,7 +345,7 @@ body.p-prosperia-invest ul.menu_user_space a:hover {
   .header-nav-prosperia .logo + .btn-login {
     display: block;
     z-index: 200;
-    font-size: 16px !important;
+    font-size: var(--font-size-base) !important;
   }
 
   /* MIPISE BUGER MENU PERSONALISATION */
