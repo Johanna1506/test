@@ -58,3 +58,11 @@
 .k-portlet .k-portlet__head .k-portlet__head-label .k-portlet__head-title {
   color: var(--color-primary) !important;
 }
+#k_content_body input {
+  color: var(--color-primary) !important;
+  border: 1px solid var(--color-primary) !important;
+  border-radius: var(--border-radius-small) !important;
+}
+#k_content_body input:focus {
+  border: 1px solid var(--color-secondary) !important;
+}
