@@ -50,7 +50,7 @@
   .k-wizard-v2__nav-item[data-kwizard-state="current"] {
   color: var(--color-primary) !important;
 }
-.k-portlet .k-portlet__head {
+#fund_subscription_wizard .k-portlet .k-portlet__head {
   background-color: var(--color-background) !important;
   color: var(--color-primary) !important;
   border-bottom: 1px solid var(--color-background) !important;
