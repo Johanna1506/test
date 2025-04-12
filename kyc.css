@@ -2,7 +2,7 @@
 #fund_subscription_wizard {
   background-color: var(--color-background) !important;
 }
-#k_content_body .k-portlet {
+#fund_subscription_wizard #k_content_body .k-portlet {
   background-color: var(--color-highlight) !important;
   color: var(--color-primary) !important;
   border-radius: var(--border-radius-large) !important;
