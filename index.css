@@ -39,7 +39,7 @@
   justify-content: flex-start !important;
 }
 .btn:empty {
-  display: none !important;
+  visibility: hidden !important;
 }
 #logo_text2 {
   color: var(--color-hover);
