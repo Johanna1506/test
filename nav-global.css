@@ -229,7 +229,7 @@ body:has(#desktop_default_client_space) .nav-links {
 }
 #markdown_platform_manager_space {
   position: fixed;
-  top: var(--spacing-medium);
+  top: 60px;
   right: 0;
   background-color: var(--color-secondary);
   padding: var(--spacing-medium);
