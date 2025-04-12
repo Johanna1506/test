@@ -58,10 +58,15 @@
 .k-portlet .k-portlet__head .k-portlet__head-label .k-portlet__head-title {
   color: var(--color-primary) !important;
 }
-#k_content_body input {
+#k_content_body input,
+#k_content_body select {
   color: var(--color-primary) !important;
   border-radius: var(--border-radius-small) !important;
 }
-#k_content_body input:focus {
+#k_content_body input:focus,
+#k_content_body select:focus {
   border: 1px solid var(--color-secondary) !important;
+}
+.k-form__actions input {
+  color: var(--color-highlight) !important;
 }

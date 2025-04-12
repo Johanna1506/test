@@ -38,7 +38,8 @@
   align-items: center !important;
   justify-content: flex-start !important;
 }
-.btn:empty {
+.btn:empty:not(input),
+input[type="submit"]:not([value]) {
   visibility: hidden !important;
 }
 #logo_text2 {
