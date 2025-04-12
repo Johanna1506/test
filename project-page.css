@@ -172,8 +172,17 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
 #project-navbar-desktop {
   background-color: var(--color-highlight) !important;
   padding: var(--spacing-medium) var(--spacing-small);
+  border-top: 1px solid var(--color-dark) !important;
+  border-bottom: 1px solid var(--color-dark) !important;
 }
-
+#project-navbar-desktop .one-third .nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 74px;
+}
+#project-navbar-desktop .one-third .nav .button-wrapper {
+  margin: 0 !important;
+}
 .header-project-menu--desktop .grid--full {
   display: flex;
   align-items: center;
