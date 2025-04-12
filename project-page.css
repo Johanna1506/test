@@ -1,3 +1,7 @@
+#sticky-wrapper {
+  display: none !important;
+}
+
 #grid_horizontal_share_project {
   width: 100% !important;
   margin: 0 auto !important;
@@ -85,11 +89,6 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
   text-align: left !important;
 }
 
-.inside-project-status .grid .grid__item:has(div)::before {
-  content: url("https://img.icons8.com/?size=20&id=11208&format=png&color=F0BA58");
-  display: inline-block;
-  margin-right: var(--spacing-small);
-}
 .inside-project-status .grid .grid__item {
   display: flex !important;
   flex-direction: row !important;
@@ -163,18 +162,24 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
   display: none !important;
 }
 .horizontal_statistics .progress-bar {
-  max-width: 200px !important;
+  max-width: 360px !important;
   position: absolute !important;
-  top: 426px !important;
+  top: 436px !important;
   z-index: 9999;
+  height: 20px !important;
+  border-radius: var(--border-radius-small);
 }
 #project-navbar-desktop {
-  background-color: var(--color-background) !important;
+  background-color: var(--color-highlight) !important;
   padding: var(--spacing-medium) var(--spacing-small);
 }
+
 .header-project-menu--desktop .grid--full {
   display: flex;
   align-items: center;
+}
+#section_nav_project {
+  background-color: var(--color-highlight) !important;
 }
 #section_nav_project .nav .nav_menu_align .menu-item {
   border: none !important;
@@ -193,7 +198,12 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
   min-height: auto !important;
   max-height: none !important;
 }
-#statistics_project .card .progress-bar {
-  height: 20px !important;
-  border-radius: var(--border-radius-small);
+.horizontal-social-banner .social-banner {
+  display: none !important;
+}
+#button_back_project {
+  background-color: var(--color-dark) !important;
+}
+#button_follow_project {
+  display: none !important;
 }
