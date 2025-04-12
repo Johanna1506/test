@@ -67,6 +67,14 @@
 #k_content_body select:focus {
   border: 1px solid var(--color-secondary) !important;
 }
-.k-form__actions input {
+#k_content_body .k-form__actions input {
   color: var(--color-highlight) !important;
+}
+#k_content_body #backer_form .alert {
+  background-color: var(--color-hover) !important;
+  border: 1px solid var(--color-hover) !important;
+  border-radius: var(--border-radius-small) !important;
+}
+#k_content_body input[type="radio"]:checked {
+  background-color: var(--color-primary) !important;
 }
