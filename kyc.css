@@ -1,3 +1,7 @@
-#k_content {
+#k_content,
+#fund_subscription_wizard {
   background-color: var(--color-background) !important;
+}
+#k_content_body .k-portlet {
+  background-color: var(--color-highlight) !important;
 }

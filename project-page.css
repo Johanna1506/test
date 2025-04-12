@@ -1,4 +1,4 @@
-#sticky-wrapper {
+.sticky-wrapper {
   display: none !important;
 }
 
@@ -118,6 +118,13 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
 #show_tags {
   padding: 0 !important;
 }
+.reward_btn--tag {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: var(--spacing-small) !important;
+}
 .reward_tag_title {
   text-align: start !important;
 }
@@ -128,12 +135,16 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
   border-radius: var(--border-radius-small) !important;
   font-weight: bold !important;
   min-height: 28px !important;
+  height: auto !important;
+  margin-bottom: var(--spacing-small);
   width: fit-content !important;
   display: flex !important;
   align-items: center !important;
   justify-content: flex-start !important;
 }
-
+.reward_btn--tag a::first-letter {
+  text-transform: uppercase !important;
+}
 .infos-rewards .info-rewards h2 {
   font-size: var(--font-size-large) !important;
   font-weight: 700;
