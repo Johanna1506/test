@@ -4,7 +4,7 @@
 }
 #section_nav_project .nav .nav_menu_align .menu-item {
   padding: 12px 16px;
-  color: #1e3e36 !important;
+  color: var(--color-primary) !important;
 }
 #grid_horizontal_share_project > .grid__item:nth-of-type(1) {
   width: 70% !important;
@@ -20,7 +20,7 @@
   max-height: none !important;
 }
 #section_nav_project .nav .nav_menu_align .menu-item.active {
-  border-color: #1e3e36 !important;
+  border-color: var(--color-primary) !important;
 }
 
 .horizontal_project_logo,
@@ -44,9 +44,9 @@
 }
 
 #horizontal_card_project {
-  background-color: #f6f1d5 !important;
-  border-radius: 6px 6px 0 0 !important;
-  color: #24372a !important;
+  background-color: var(--color-background) !important;
+  border-radius: var(--border-radius-medium) var(--border-radius-medium) 0 0 !important;
+  color: var(--color-dark) !important;
   margin: 60px 0 0 0 !important;
   box-shadow: none !important;
 }
@@ -56,7 +56,7 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
 
 #horizontal_card_project .inside-project-name {
   margin: 12px 0 !important;
-  font-size: 24px !important;
+  font-size: var(--font-size-large) !important;
 }
 #horizontal_card_project .inside-project-tags .fa-tag,
 #horizontal_card_project .inside-project-tags .inside-project-localization,
@@ -67,13 +67,13 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
   text-align: start !important;
 }
 #horizontal_card_project .inside-project-tags a {
-  background: #f0ba58 !important;
-  color: white !important;
-  padding: 5px 10px !important;
-  border-radius: 6px !important;
+  background: var(--color-secondary) !important;
+  color: var(--color-light) !important;
+  padding: var(--spacing-small) var(--spacing-medium) !important;
+  border-radius: var(--border-radius-small) !important;
   font-weight: bold !important;
   min-height: 28px !important;
-  font-size: 13px !important;
+  font-size: var(--font-size-small) !important;
 }
 .inside-project-status .grid {
   display: flex !important;
@@ -88,7 +88,7 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
 .inside-project-status .grid .grid__item:has(div)::before {
   content: url("https://img.icons8.com/?size=20&id=11208&format=png&color=F0BA58");
   display: inline-block;
-  margin-right: 8px;
+  margin-right: var(--spacing-small);
 }
 .inside-project-status .grid .grid__item {
   display: flex !important;
@@ -102,12 +102,12 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
   justify-content: flex-start !important;
   align-items: center !important;
   width: auto !important;
-  gap: 6px;
+  gap: var(--spacing-small);
   align-items: flex-start;
 }
 .inside-project-status .grid .grid__item div .milli {
-  font-size: 16px !important;
-  color: #24372a !important;
+  font-size: var(--font-size-base) !important;
+  color: var(--color-dark) !important;
   font-weight: bold !important;
 }
 .inside-project-status .grid .grid__item div .milli::before {
@@ -123,10 +123,10 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
   text-align: start !important;
 }
 .reward_btn--tag a {
-  background: #f0ba58 !important;
-  color: white !important;
-  padding: 5px 10px !important;
-  border-radius: 6px !important;
+  background: var(--color-secondary) !important;
+  color: var(--color-light) !important;
+  padding: var(--spacing-small) var(--spacing-medium) !important;
+  border-radius: var(--border-radius-small) !important;
   font-weight: bold !important;
   min-height: 28px !important;
   width: fit-content !important;
@@ -136,10 +136,10 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
 }
 
 .infos-rewards .info-rewards h2 {
-  font-size: 20px !important;
+  font-size: var(--font-size-large) !important;
   font-weight: 700;
-  margin-bottom: 6px !important;
-  margin-top: 30px !important;
+  margin-bottom: var(--spacing-small) !important;
+  margin-top: var(--spacing-large) !important;
 }
 .infos-rewards .info-rewards:has(.bulletpoint) p {
   display: flex !important;
@@ -149,7 +149,7 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
 }
 .infos-rewards .info-rewards .bulletpoint::before {
   content: url("https://img.icons8.com/material-sharp/10/filled-circle.png") !important;
-  margin-right: 10px !important;
+  margin-right: var(--spacing-small) !important;
 }
 #statistics_project .horizontal_statistics.card {
   position: initial !important;
@@ -169,8 +169,8 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
   z-index: 9999;
 }
 #project-navbar-desktop {
-  background-color: #f6f1d5 !important;
-  padding: 12px 6px;
+  background-color: var(--color-background) !important;
+  padding: var(--spacing-medium) var(--spacing-small);
 }
 .header-project-menu--desktop .grid--full {
   display: flex;
@@ -178,11 +178,11 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
 }
 #section_nav_project .nav .nav_menu_align .menu-item {
   border: none !important;
-  border-radius: 6px !important;
+  border-radius: var(--border-radius-small) !important;
 }
 #section_nav_project .nav .nav_menu_align .menu-item.active {
-  background: #f0ba58 !important;
-  color: white !important;
+  background: var(--color-secondary) !important;
+  color: var(--color-light) !important;
 }
 #section_nav_project .nav .nav_menu_align .menu-item:hover {
   background: #f9e3bc !important;
@@ -195,5 +195,5 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
 }
 #statistics_project .card .progress-bar {
   height: 20px !important;
-  border-radius: 6px;
+  border-radius: var(--border-radius-small);
 }

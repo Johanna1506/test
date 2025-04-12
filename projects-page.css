@@ -1,7 +1,7 @@
 .top_text_zone {
-  background-color: #1e3e36;
+  background-color: var(--color-highlight);
   height: 260px;
-  color: white;
+  color: var(--color-primary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,6 +13,7 @@
   font-weight: bold !important;
   text-transform: none !important;
 }
+
 .boxslider {
-  background-color: #f6f1d5;
+  background-color: var(--color-background);
 }
