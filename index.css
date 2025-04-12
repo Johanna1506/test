@@ -49,7 +49,7 @@ input[type="submit"]:not([value]) {
   color: var(--color-primary) !important;
 }
 .alert.alert-outline-primary .alert-text {
-  color: var(--color-highligh) !important;
+  color: var(--color-highlight) !important;
 }
 .project-transparent-title {
   position: relative;
