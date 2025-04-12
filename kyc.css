@@ -14,13 +14,15 @@
   span {
   min-width: 2.7rem;
   min-height: 2.7rem;
+  background-color: var(--color-hover) !important;
+  color: var(--color-highlight) !important;
 }
 .k-wizard-v2
   .k-wizard-v2__nav
   .k-wizard-v2__nav-items
   .k-wizard-v2__nav-item[data-kwizard-state="current"]
   span {
-  background-color: var(--color-primary) !important;
+  background-color: var(--color-secondary) !important;
   color: var(--color-background) !important;
 }
 .k-wizard-v2
@@ -28,4 +30,9 @@
   .k-wizard-v2__nav-items
   .k-wizard-v2__nav-item[data-kwizard-state="current"] {
   color: var(--color-primary) !important;
+}
+.k-portlet .k-portlet__head {
+  background-color: var(--color-background) !important;
+  color: var(--color-primary) !important;
+  border-bottom: 1px solid var(--color-background) !important;
 }
