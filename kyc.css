@@ -70,7 +70,7 @@
 #k_content_body .k-form__actions input {
   color: var(--color-highlight) !important;
 }
-#k_content_body #backer_form .alert {
+#k_content_body .alert {
   background-color: var(--color-hover) !important;
   border: 1px solid var(--color-hover) !important;
   border-radius: var(--border-radius-small) !important;
