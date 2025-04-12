@@ -45,7 +45,12 @@ input[type="submit"]:not([value]) {
 #logo_text2 {
   color: var(--color-hover);
 }
-
+.k-font-primary {
+  color: #1e3e36 !important;
+}
+.alert.alert-outline-primary .alert-text {
+  color: #fefbf3 1important;
+}
 .project-transparent-title {
   position: relative;
 }
