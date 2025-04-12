@@ -268,10 +268,12 @@ li:has(#desktop_default_client_space):hover::after {
 }
 ul.menu_user_space a,
 ul.menu_user_space strong {
-  padding: var(--spacing-small) 0;
+  padding: var(--spacing-medium) var(--spacing-large);
+  font-size: var(--font-size-small);
 }
 body.p-prosperia-invest ul.menu_user_space a:hover {
   color: var(--color-secondary) !important;
+  background-color: inherit !important;
 }
 
 @media (max-width: 768px) {
