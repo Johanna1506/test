@@ -1,5 +1,5 @@
 #section_own_projects {
-  padding: 16px !important;
+  padding: var(--spacing-medium) !important;
   width: 80% !important;
   margin: 0 auto !important;
 }
@@ -8,7 +8,7 @@
     width: 100% !important;
   }
   .projects > .grid--center {
-    gap: 12px !important;
+    gap: var(--spacing-small) !important;
   }
 }
 .projects > .grid--center {
@@ -16,7 +16,7 @@
   align-items: flex-start !important;
   justify-content: flex-start !important;
   flex-wrap: wrap !important;
-  gap: 24px !important;
+  gap: var(--spacing-large) !important;
 }
 .projects > .grid--center > .grid__item {
   width: auto !important;
@@ -37,7 +37,7 @@
 }
 
 .project-box .card {
-  background-color: #fefbf3 !important;
+  background-color: var(--color-highlight) !important;
   max-width: 346px !important;
   min-width: 346px !important;
   min-height: 512px !important;
@@ -45,8 +45,8 @@
 }
 .box_project_security,
 .box_project_equity {
-  background-color: #fefbf3 !important;
-  border-radius: 12px !important;
+  background-color: var(--color-highlight) !important;
+  border-radius: var(--border-radius-large) !important;
   max-width: 346px !important;
   min-width: 346px !important;
   min-height: 512px !important;
@@ -64,11 +64,11 @@
 }
 
 img.one-whole {
-  border-radius: 12px 12px 0 0 !important;
+  border-radius: var(--border-radius-large) var(--border-radius-large) 0 0 !important;
   height: 210px !important;
 }
 .project-box .card {
-  border-radius: 12px !important;
+  border-radius: var(--border-radius-large) !important;
 }
 .project-box .card .card-header {
   position: relative !important;
@@ -76,19 +76,19 @@ img.one-whole {
 
 .project-box .card .card-image {
   position: relative !important;
-  border-radius: 12px 12px 0 0 !important;
+  border-radius: var(--border-radius-large) var(--border-radius-large) 0 0 !important;
 }
 
 .neodual-category {
   position: absolute !important;
-  bottom: 10px !important;
-  left: 10px !important;
-  background: #f0ba58 !important;
-  padding: 5px 10px !important;
-  border-radius: 6px !important;
+  bottom: var(--spacing-small) !important;
+  left: var(--spacing-small) !important;
+  background: var(--color-secondary) !important;
+  padding: var(--spacing-small) var(--spacing-medium) !important;
+  border-radius: var(--border-radius-small) !important;
   font-weight: bold !important;
   min-height: 28px !important;
-  font-size: 13px !important;
+  font-size: var(--font-size-small) !important;
 }
 
 .neodual-category:empty {
@@ -96,10 +96,10 @@ img.one-whole {
 }
 
 .neodual-card-content {
-  padding: 18px !important;
-  color: #24372a !important;
+  padding: var(--spacing-large) !important;
+  color: var(--color-dark) !important;
   margin-top: 200px !important;
-  background-color: #fefbf3 !important;
+  background-color: var(--color-highlight) !important;
 }
 
 .neodual-card-content .push--top {
@@ -107,7 +107,7 @@ img.one-whole {
 }
 
 .neodual-address_city {
-  font-size: 24px !important;
+  font-size: var(--font-size-large) !important;
   font-weight: 700 !important;
   display: inline !important;
 }
@@ -125,7 +125,7 @@ img.one-whole {
   top: 0;
   width: 10px;
   height: 100%;
-  background-color: #fefbf3;
+  background-color: var(--color-highlight);
   z-index: 1;
 }
 
@@ -134,7 +134,7 @@ img.one-whole {
 }
 
 .neodual-about-box {
-  font-size: 18px !important;
+  font-size: var(--font-size-base) !important;
   font-weight: 400 !important;
   min-height: 28px !important;
   margin-top: 0 !important;
@@ -144,33 +144,33 @@ img.one-whole {
   content: "Découvrir";
   display: flex;
   height: 30px;
-  background-color: #24372a !important;
-  color: white;
-  margin: 12px auto;
-  border-radius: 6px;
+  background-color: var(--color-dark) !important;
+  color: var(--color-light);
+  margin: var(--spacing-medium) auto;
+  border-radius: var(--border-radius-small);
   width: 80%;
   align-items: center;
   justify-content: center;
 }
 .neodual-goal {
   position: absolute !important;
-  bottom: 18px !important;
+  bottom: var(--spacing-large) !important;
   margin: 0 !important;
   width: 90% !important;
 }
 
 .neodual-goal .progress-bar {
-  border-radius: 6px !important;
+  border-radius: var(--border-radius-small) !important;
   height: 20px !important;
-  background-color: #24372a !important;
+  background-color: var(--color-dark) !important;
   margin-top: 0px !important;
   width: 100% !important;
 }
 
 .progress-bar .bar {
-  border-radius: 6px !important;
+  border-radius: var(--border-radius-small) !important;
   height: 20px !important;
-  background-color: #f0ba58 !important;
+  background-color: var(--color-secondary) !important;
   font-size: 0;
 }
 .neodual-bar-stripped {
@@ -178,8 +178,8 @@ img.one-whole {
 }
 .neodual-status .background_color_security,
 .neodual-status .background_color_equity {
-  background-color: #fefbf3 !important;
-  padding: 0 18px !important;
+  background-color: var(--color-highlight) !important;
+  padding: 0 var(--spacing-large) !important;
 }
 .neodual-status .background_color_security .neodual-flex-box,
 .neodual-status .background_color_equity .neodual-flex-box {
@@ -195,11 +195,11 @@ img.one-whole {
   min-width: 100px !important;
   padding: 0 !important;
   flex-direction: row !important;
-  gap: 6px !important;
+  gap: var(--spacing-small) !important;
 }
 
 .text_type_group {
-  color: #24372a !important;
+  color: var(--color-dark) !important;
 }
 .neodual-type-security .text_type_group:first-of-type::after {
   content: " : " !important;
@@ -207,5 +207,5 @@ img.one-whole {
 .neodual-type-security:has(div)::before {
   content: url("https://img.icons8.com/?size=20&id=11208&format=png&color=F0BA58");
   display: inline-block;
-  margin-right: 8px;
+  margin-right: var(--spacing-small);
 }

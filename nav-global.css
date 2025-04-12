@@ -14,24 +14,24 @@
 
 body {
   margin: 0;
-  background-color: #f6f1d5;
-  color: #24372a;
+  background-color: var(--color-background);
+  color: var(--color-dark);
   font-family: "centurygothic", Arial, sans-serif;
 }
 .header-nav-prosperia pre,
 .header-nav-prosperia code {
   font-family: "centurygothic", Arial, sans-serif !important;
-  font-size: 16px !important;
+  font-size: var(--font-size-base) !important;
   margin: 0 !important;
 }
 .header-nav-prosperia nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1e3e36;
-  color: white;
-  padding: 6px 20px;
-  height: 70px;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  padding: var(--spacing-small) var(--spacing-large);
+  height: var(--header-height);
   font-family: "centurygothic", Arial, sans-serif;
 }
 .header-nav-prosperia .logo {
@@ -54,19 +54,19 @@ body {
   align-items: center;
 }
 .header-nav-prosperia .nav-links a {
-  color: white;
+  color: var(--color-light);
   text-decoration: none;
-  padding: 0 15px;
+  padding: 0 var(--spacing-medium);
   display: block;
   height: 100%;
   display: flex;
   align-items: center;
   transition: color 0.3s ease, background-color 0.3s ease;
-  font-size: 15px;
+  font-size: var(--font-size-small);
   letter-spacing: 0.2px;
 }
 .header-nav-prosperia .nav-links a:hover {
-  color: #f0ba58;
+  color: var(--color-secondary);
 }
 .header-nav-prosperia .drop-down {
   position: relative;
@@ -97,16 +97,16 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #1e3e36;
+  background-color: var(--color-primary);
   min-width: 200px;
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
   transition: all 0.3s ease;
   z-index: 100;
-  padding: 5px 0;
+  padding: var(--spacing-small) 0;
   margin: 0;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 var(--border-radius-medium) var(--border-radius-medium);
   overflow: hidden;
 }
 .header-nav-prosperia .drop-down-menu li {
@@ -114,11 +114,11 @@ body {
   height: auto;
 }
 .header-nav-prosperia .drop-down-menu a {
-  padding: 12px 20px;
+  padding: var(--spacing-medium) var(--spacing-large);
   width: 100%;
 }
 .header-nav-prosperia .drop-down-menu a:hover {
-  color: #f0ba58;
+  color: var(--color-secondary);
 }
 .header-nav-prosperia .drop-down:hover .drop-down-menu {
   opacity: 1;
@@ -128,11 +128,11 @@ body {
 }
 .header-nav-prosperia .nav-links .btn-login,
 .header-nav-prosperia .btn-login {
-  background-color: #f0ba58;
-  color: #ffffff;
+  background-color: var(--color-secondary);
+  color: var(--color-light);
   text-decoration: none;
-  padding: 12px 20px;
-  border-radius: 10px;
+  padding: var(--spacing-medium) var(--spacing-large);
+  border-radius: var(--border-radius-medium);
   text-align: center;
   height: 50px;
 }
@@ -140,54 +140,15 @@ body {
   display: none;
 }
 .header-nav-prosperia .nav-links .btn-login:hover {
-  background-color: #5e8b7a;
-  color: #ffffff;
-}
-/* === BURGER MENU === */
-.header-nav-prosperia #menu-toggle {
-  display: none;
-}
-
-.header-nav-prosperia .burger {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  width: 30px;
-  height: 24px;
-  cursor: pointer;
-  gap: 5px;
-}
-
-.header-nav-prosperia .burger span {
-  display: block;
-  height: 3px;
-  width: 100%;
-  background-color: #ffffff;
-  transition: all 0.3s ease;
-  border-radius: 2px;
-}
-.header-nav-prosperia #menu-toggle {
-  display: none;
-}
-.header-nav-prosperia .burger {
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 25px;
-  height: 20px;
-  cursor: pointer;
-  z-index: 200;
+  background-color: var(--color-hover);
+  color: var(--color-light);
 }
 .header-nav-prosperia .burger span {
-  display: block;
-  height: 3px;
-  background: white;
-  border-radius: 3px;
-  transition: all 0.3s ease;
+  background: var(--color-light);
 }
 main,
 footer {
-  padding: 18px;
+  padding: var(--spacing-large);
 }
 
 /* === MENU PERSONNALISÉ MIPISE === */
@@ -259,19 +220,19 @@ li:has(#desktop_default_client_space):hover::after {
 }
 
 .personalized_menu_user_space {
-  background-color: #1e3e36 !important;
+  background-color: var(--color-primary) !important;
   min-width: 200px;
-  padding: 6px;
+  padding: var(--spacing-small);
   margin: 0;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 var(--border-radius-medium) var(--border-radius-medium);
   overflow: hidden;
 }
 ul.menu_user_space a,
 ul.menu_user_space strong {
-  padding: 6px 0;
+  padding: var(--spacing-small) 0;
 }
 body.p-prosperia-invest ul.menu_user_space a:hover {
-  color: #f0ba58 !important;
+  color: var(--color-secondary) !important;
 }
 
 @media (max-width: 768px) {

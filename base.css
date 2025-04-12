@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-dark);
+  font-family: var(--font-family-main);
+  font-size: var(--font-size-base);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li {
+  font-family: var(--font-family-main);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+.btn {
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  padding: var(--spacing-medium) var(--spacing-large);
+  border-radius: var(--border-radius-medium);
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+  background-color: var(--color-hover);
+}
