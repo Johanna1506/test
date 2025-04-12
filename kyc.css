@@ -63,11 +63,13 @@
   color: var(--color-primary) !important;
   border-radius: var(--border-radius-small) !important;
 }
+
 #k_content_body input:focus,
 #k_content_body select:focus {
   border: 1px solid var(--color-secondary) !important;
 }
-#k_content_body .k-form__actions input {
+#k_content_body .k-form__actions input,
+#k_content_body input[type="submit"] {
   color: var(--color-highlight) !important;
 }
 #k_content_body .alert {
