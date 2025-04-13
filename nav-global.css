@@ -335,7 +335,7 @@ body.p-prosperia-invest ul.menu_user_space a:hover {
   .header-nav-prosperia .nav-links a {
     font-size: var(--font-size-large);
     height: auto;
-    padding: var(--spacing-large);
+    padding: var(--spacing-small);
   }
   .header-nav-prosperia .drop-down:hover .drop-down-menu {
     position: initial;
