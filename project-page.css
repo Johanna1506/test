@@ -233,10 +233,12 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
   }
   #grid_horizontal_share_project > .grid__item:nth-of-type(2) {
     width: 100% !important;
+    min-height: 400px !important;
+    max-height: 400px !important;
   }
   .horizontal_statistics .progress-bar {
     max-width: 330px !important;
-    top: 436px !important;
+    top: 364px !important;
     right: 24px !important;
   }
   #project-navbar-desktop {
