@@ -359,7 +359,7 @@ body.p-prosperia-invest ul.menu_user_space a:hover {
     display: block !important;
   }
 
-  #header > .grid--middle {
+  #header .grid--middle {
     display: none !important;
   }
   #header > #js-header-nav {
