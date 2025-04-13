@@ -271,7 +271,10 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
     .nav
     .nav_menu_align
     .menu-item.active {
-    background: var(--color-secondary) !important;
-    color: var(--color-light) !important;
+    color: var(--color-secondary) !important;
+  }
+  #grid_main_template .one-quarter .horizontal_statistics {
+    padding: 22px !important;
+    margin: 0 !important;
   }
 }
