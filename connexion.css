@@ -81,3 +81,15 @@
 /* Sign-in */
 #main-container-registrations-new {
 }
+
+/* Sign-in and Sign-up */
+#new_session .background-low-color {
+  background-color: var(--color-highlight) !important;
+}
+#new_session .background-low-color .card .form-group .password,
+#new_session .background-low-color .card .form-group .email {
+  border-radius: var(--border-radius-small) !important;
+  width: auto;
+  min-width: 100%;
+  text-align: start;
+}
