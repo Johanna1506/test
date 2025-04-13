@@ -1,6 +1,6 @@
 /* Login */
 .new-session-registration .background-low-color {
-  background-color: var(--color-light) !important;
+  background-color: var(--color-background) !important;
 }
 @media screen and (max-width: 600px) {
   .new-session-registration .background-low-color {
@@ -35,6 +35,7 @@
   background-color: inherit !important;
   border-radius: 0 !important;
   box-shadow: none !important;
+  padding: 0 !important;
 }
 .new-session-registration #sign_in .card > .form-group {
   width: 80%;

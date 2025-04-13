@@ -352,9 +352,6 @@ body.p-prosperia-invest ul.menu_user_space a:hover {
 
   /* MIPISE BUGER MENU PERSONALISATION */
 
-  .visuallyhidden--desktop#header {
-    display: none !important;
-  }
   #header-desktop {
     display: contents !important;
   }
