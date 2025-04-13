@@ -15,5 +15,17 @@
 }
 
 .boxslider {
-  background-color: var(--color-background);
+  background-color: var(--color-background) !important;
+}
+#section_own_projects > .grid {
+  margin: 0 !important;
+  display: flex !important;
+  gap: 12px !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+#section_own_projects > .grid > .grid__item {
+  padding: 0 !important;
+  width: auto !important;
 }
