@@ -342,6 +342,7 @@ body.p-prosperia-invest ul.menu_user_space a:hover {
     position: initial;
     box-shadow: none;
     margin-left: var(--spacing-medium);
+    font-size: var(--font-size-base);
   }
   .header-nav-prosperia .nav-links .btn-login {
     display: none;
