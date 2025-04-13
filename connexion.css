@@ -1,6 +1,6 @@
 /* Login */
 .new-session-registration .background-low-color {
-  background-color: var(--color-background) !important;
+  background-color: var(--color-highlight) !important;
 }
 @media screen and (max-width: 600px) {
   .new-session-registration .background-low-color {
