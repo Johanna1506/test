@@ -263,5 +263,15 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
     .nav_menu_align
     .menu-item {
     border: none !important;
+    border-radius: var(--border-radius-small) !important;
+    padding: 12px 16px;
+  }
+  #project-navbar-desktop
+    #js-header-project-nav
+    .nav
+    .nav_menu_align
+    .menu-item.active {
+    background: var(--color-secondary) !important;
+    color: var(--color-light) !important;
   }
 }
