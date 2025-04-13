@@ -239,6 +239,9 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
     top: 436px !important;
     right: 24px !important;
   }
+  #project-navbar-desktop {
+    position: relative !important;
+  }
   #project-navbar-desktop .header-project-menu--portable > .grid {
     display: flex;
     align-items: center;
@@ -246,5 +249,12 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
   }
   #project-navbar-desktop .header-project-menu--portable #js-show-project-menu {
     color: var(--color-primary) !important;
+  }
+  #project-navbar-desktop #js-header-project-nav {
+    position: absolute;
+    top: 70px;
+    background-color: var(--color-primary) !important;
+    padding: var(--spacing-medium) var(--spacing-small);
+    border-radius: var(--border-radius-medium) !important;
   }
 }
