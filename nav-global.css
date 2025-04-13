@@ -333,7 +333,7 @@ body.p-prosperia-invest ul.menu_user_space a:hover {
   }
 
   .header-nav-prosperia .nav-links a {
-    font-size: var(--font-size-large);
+    font-size: 20px;
     height: auto;
     padding: var(--spacing-small);
     text-align: start;
@@ -342,6 +342,9 @@ body.p-prosperia-invest ul.menu_user_space a:hover {
     position: initial;
     box-shadow: none;
     margin-left: var(--spacing-medium);
+    font-size: 20px;
+  }
+  .header-nav-prosperia .drop-down:hover .drop-down-menu a span {
     font-size: var(--font-size-base);
   }
   .header-nav-prosperia .nav-links .btn-login {
