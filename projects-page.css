@@ -22,7 +22,10 @@
   margin: 0 auto !important;
   padding: 0 var(--spacing-medium) !important;
 }
-
+#section_own_project > .grid {
+  margin: 0 !important;
+  padding: 0 !important;
+}
 #section_own_project .projects > .grid--center {
   display: flex !important;
   align-items: flex-start !important;
