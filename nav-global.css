@@ -373,7 +373,7 @@ body.p-prosperia-invest ul.menu_user_space a:hover {
     position: absolute !important;
     width: 100% !important;
   }
-  #menu-toggle:checked ~ #header > #js-header-nav {
+  #menu-toggle:checked ~ nav > #js-header-nav {
     height: 100vh !important;
   }
 }
