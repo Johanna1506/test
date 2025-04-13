@@ -257,4 +257,11 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
     padding: var(--spacing-medium) var(--spacing-small);
     border-radius: var(--border-radius-medium) !important;
   }
+  #project-navbar-desktop
+    #js-header-project-nav
+    .nav
+    .nav_menu_align
+    .menu-item {
+    border: none !important;
+  }
 }
