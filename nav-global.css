@@ -286,7 +286,7 @@ body.p-prosperia-invest ul.menu_user_space a:hover {
 
   .header-nav-prosperia .nav-links {
     overflow: scroll;
-    position: fixed;
+    position: absolute;
     top: var(--header-height);
     left: 0;
     flex-direction: column;
