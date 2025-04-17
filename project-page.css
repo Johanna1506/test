@@ -228,7 +228,7 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
 #button_follow_project {
   display: none !important;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   #grid_horizontal_share_project > .grid__item:nth-of-type(1) {
     display: none !important;
   }
