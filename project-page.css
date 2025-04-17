@@ -69,6 +69,7 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
 }
 .inside-project-financial-data {
   text-align: start !important;
+  margin-top: 12px !important;
 }
 #horizontal_card_project .inside-project-tags a {
   background: var(--color-secondary) !important;
