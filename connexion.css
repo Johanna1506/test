@@ -113,3 +113,7 @@
   align-items: flex-start;
   gap: var(--spacing-medium);
 }
+#new_session .grid__item {
+  margin: 0 !important;
+  padding: 0 !important;
+}
