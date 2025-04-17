@@ -123,3 +123,14 @@
 #grid_session .grid {
   margin: 0 !important;
 }
+#grid_session {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 22px 0;
+}
+#grid_session .portable--one-whole {
+  background-color: var(--color-background) !important;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  border-radius: var(--border-radius-medium) !important;
+  padding: var(--spacing-large) !important;
+}
