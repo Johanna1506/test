@@ -29,3 +29,9 @@
   padding: 0 !important;
   width: auto !important;
 }
+#projects_discover_section_explore {
+  display: none !important;
+}
+#projects_section_explore > .eight-tenths {
+  width: 100% !important;
+}
