@@ -117,3 +117,7 @@
   margin: 0 !important;
   padding: 0 !important;
 }
+
+#new_session .background-low-color > .grid {
+  margin: 0 !important;
+}
