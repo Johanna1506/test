@@ -118,6 +118,7 @@
   padding: 0 !important;
 }
 
-#new_session .background-low-color > .grid {
+#new_session .background-low-color > .grid,
+#new_session #grid_session {
   margin: 0 !important;
 }
