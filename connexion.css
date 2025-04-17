@@ -90,7 +90,7 @@
   background-color: inherit !important;
   border-radius: 0 !important;
   box-shadow: none !important;
-  padding: 0 !important;
+  padding: var(--spacing-medium) !important;
 }
 #new_session .fa {
   display: none !important;
@@ -112,6 +112,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: var(--spacing-medium);
+  width: 100% !important;
 }
 #new_session .grid__item {
   margin: 0 !important;
