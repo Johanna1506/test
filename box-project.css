@@ -40,7 +40,7 @@
 
 img.one-whole {
   border-radius: var(--border-radius-large) var(--border-radius-large) 0 0 !important;
-  height: 210px !important;
+  height: 190px !important;
 }
 .project-box .card {
   border-radius: var(--border-radius-large) !important;
@@ -73,7 +73,7 @@ img.one-whole {
 .neodual-card-content {
   padding: var(--spacing-large) !important;
   color: var(--color-dark) !important;
-  margin-top: 200px !important;
+  margin-top: 180px !important;
   background-color: var(--color-highlight) !important;
 }
 
