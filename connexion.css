@@ -119,6 +119,7 @@
 }
 
 #new_session .background-low-color > .grid,
-#new_session #grid_session {
+#new_session #grid_session,
+#grid_session .grid {
   margin: 0 !important;
 }
