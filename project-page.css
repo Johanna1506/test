@@ -231,9 +231,9 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
   display: none !important;
 }
 #statistics_project .project-statistic {
-  background-color: none !important;
+  background: none !important;
 }
-#statistics_project .grid__item:has(i) {
+#statistics_project .not_reached_goal #statistics_project .grid__item:has(i) {
   display: none !important;
 }
 #show_tags {
