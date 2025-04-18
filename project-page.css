@@ -186,6 +186,8 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
   padding: var(--spacing-medium) var(--spacing-small);
   border-top: 1px solid var(--color-dark) !important;
   border-bottom: 1px solid var(--color-dark) !important;
+  position: sticky !important;
+  top: 0 !important;
 }
 #project-navbar-desktop .one-third .nav {
   display: flex;
@@ -246,10 +248,6 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
     max-width: 330px !important;
     top: 364px !important;
     right: 24px !important;
-  }
-  #project-navbar-desktop {
-    position: sticky !important;
-    top: 0 !important;
   }
   #project-navbar-desktop .header-project-menu--portable > .grid {
     display: flex;
