@@ -56,7 +56,7 @@
   min-width: 100%;
   text-align: start;
 }
-.new-session-registration #sign_in .card > .milli {
+#sign_in .card > .milli {
   width: 80% !important;
   margin-top: var(--spacing-large) !important;
 }
@@ -70,8 +70,9 @@
 #new_user_session > .text--center br {
   display: none !important;
 }
-#new_user_session > .text--center #user_submit {
-  padding: 0 2rem !important;
+#new_user_session > .text--center #user_submit,
+#user_submit_sign_up {
+  height: auto !important;
   margin: 0 !important;
 }
 #new_user_session > .text--center > .k-padding-5 {
@@ -112,7 +113,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: var(--spacing-medium);
-  width: 100% !important;
+  width: 80% !important;
 }
 #new_session .grid__item {
   margin: 0 !important;
