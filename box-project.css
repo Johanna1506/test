@@ -154,7 +154,7 @@ img.one-whole {
   background-color: var(--color-secondary) !important;
   font-size: 0;
 }
-.progress-bar .bar:has(0) {
+.progress-bar .bar:has(:contains("0%")) {
   display: none !important;
 }
 .neodual-bar-stripped {
