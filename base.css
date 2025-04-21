@@ -62,3 +62,17 @@ button:hover,
 .btn:hover {
   background-color: var(--color-hover);
 }
+.flash {
+  position: absolute;
+  top: 70px;
+  z-index: 999;
+}
+.flash .success.wrapper,
+.flash .notice.wrapper {
+  background-color: var(--color-hover) !important;
+  color: var(--color-light) !important;
+}
+.flash .alert {
+  background-color: var(--color-warning) !important;
+  color: var(--color-light) !important;
+}
