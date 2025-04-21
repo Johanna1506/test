@@ -111,7 +111,13 @@ img.one-whole {
 .neodual-about-box {
   font-size: var(--font-size-base) !important;
   font-weight: 400 !important;
-  min-height: 28px !important;
+  min-height: 44px !important;
+  max-height: 44px !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
   margin-top: 0 !important;
 }
 
