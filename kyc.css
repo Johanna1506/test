@@ -3,7 +3,6 @@
   background-color: var(--color-highlight) !important;
 }
 #fund_subscription_wizard #k_content_body .k-portlet {
-  background-color: var(--color-background) !important;
   color: var(--color-primary) !important;
   border-radius: var(--border-radius-large) !important;
 }
