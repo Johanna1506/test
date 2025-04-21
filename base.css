@@ -63,10 +63,13 @@ button:hover,
   background-color: var(--color-hover);
 }
 .flash {
-  position: absolute;
+  position: fixed;
   top: 70px;
+  right: 20px;
   z-index: 999;
+  animation: fadeOut 15s forwards;
 }
+
 .flash .success.wrapper,
 .flash .notice.wrapper {
   background-color: var(--color-hover) !important;
@@ -78,4 +81,13 @@ button:hover,
 }
 .flash .fa-times {
   color: var(--color-light) !important;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
 }
