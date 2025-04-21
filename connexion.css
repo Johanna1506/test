@@ -73,7 +73,7 @@
 #new_user_session > .text--center #user_submit,
 #user_submit_sign_up {
   height: auto !important;
-  margin: 0 !important;
+  margin: var(--spacing-small) auto !important;
 }
 #new_user_session > .text--center > .k-padding-5 {
   order: 3;
