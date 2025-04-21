@@ -242,6 +242,11 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
 #show_tags {
   display: none !important;
 }
+@media (max-width: 1208px) {
+  .horizontal_statistics .progress-bar {
+    top: 466px !important;
+  }
+}
 @media (max-width: 1024px) {
   #grid_horizontal_share_project > .grid__item:nth-of-type(1) {
     display: none !important;
@@ -254,12 +259,13 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
   #grid_horizontal_share_project
     > .grid__item:nth-of-type(2)
     #horizontal_card_project {
-    max-width: auto !important;
+    max-width: 100% !important;
   }
   .horizontal_statistics .progress-bar {
     max-width: 330px !important;
     top: 364px !important;
-    right: 24px !important;
+    right: 50% !important;
+    transform: translate(50%, 0) !important;
   }
   #project-navbar-desktop .header-project-menu--portable > .grid {
     display: flex;
