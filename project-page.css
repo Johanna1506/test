@@ -308,7 +308,9 @@ body:has(.circle-progress) #horizontal_card_project {
 
 /* action circle to bar */
 .project-statistic-percentage {
-  position: relative;
+  position: absolute;
+  top: 364px !important;
+  right: -10% !important;
 }
 
 .project-statistic-percentage > div {
@@ -780,4 +782,7 @@ body:has(.circle-progress) #horizontal_card_project {
 
 .project-statistic-percentage .circle-progress {
   display: none;
+}
+.project-statistic .submit.center #button_back_project {
+  display: none !important;
 }
