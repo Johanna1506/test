@@ -1,3 +1,6 @@
+#powered-by-mipise {
+  display: none !important;
+}
 #footer-prosperia {
   background-color: var(--color-primary);
   padding: var(--spacing-large);
@@ -57,6 +60,20 @@
   display: flex;
   justify-content: space-around;
   margin-top: 24px;
+}
+#footer-prosperia .footer-container .footer-flex > ul li.footer-social-media a {
+  padding: 12px;
+  border-radius: 24px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+#footer-prosperia
+  .footer-container
+  .footer-flex
+  > ul
+  li.footer-social-media
+  a:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-light);
 }
 #footer-prosperia
   .footer-container
