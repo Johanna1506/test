@@ -54,7 +54,8 @@
   margin: 60px 0 0 0 !important;
   box-shadow: none !important;
 }
-body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
+body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project,
+body:has(.circle-progress) #horizontal_card_project {
   padding-bottom: 62px !important;
 }
 
@@ -174,6 +175,7 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
   display: none !important;
 }
 .horizontal_statistics .progress-bar {
+  background-color: var(--color-primary) !important;
   max-width: 360px !important;
   position: absolute !important;
   top: 446px !important;
@@ -314,7 +316,7 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
   width: 200px !important;
   height: 20px !important;
   background-color: var(--color-primary);
-  border-radius: 10px;
+  border-radius: var(--border-radius-small);
   position: relative;
   margin: 20px auto;
   overflow: hidden;
@@ -328,7 +330,7 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
   width: 0%;
   height: 100%;
   background-color: var(--color-secondary);
-  border-radius: 10px;
+  border-radius: var(--border-radius-small);
   transition: width 0.3s ease;
 }
 
