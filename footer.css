@@ -88,3 +88,8 @@
 #footer-prosperia .footer-container .footer-flex > ul li a:hover {
   color: var(--color-secondary);
 }
+@media (max-width: 768px) {
+  .footer {
+    padding: 0 !important;
+  }
+}
