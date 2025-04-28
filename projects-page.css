@@ -35,3 +35,9 @@
 #projects_section_explore > .eight-tenths {
   width: 100% !important;
 }
+@media screen and (max-width: 600px) {
+  #section_own_projects > .grid {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+}
