@@ -305,11 +305,11 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
 }
 
 /* action circle to bar */
-/* .grid__item {
+.project-statistic-percentage {
   position: relative;
 }
 
-.grid__item > div {
+.project-statistic-percentage > div {
   width: 200px !important;
   height: 20px !important;
   background-color: var(--color-primary);
@@ -319,7 +319,7 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
   overflow: hidden;
 }
 
-.grid__item > div::after {
+.project-statistic-percentage > div::after {
   content: "";
   position: absolute;
   top: 0;
@@ -329,7 +329,7 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
   background-color: var(--color-secondary);
   border-radius: 10px;
   transition: width 0.3s ease;
-} */
+}
 
 .circle-progress[value="0"] ~ div::after {
   width: 0%;
@@ -771,10 +771,10 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
   width: 100%;
 }
 
-.grid__item canvas {
+.project-statistic-percentage canvas {
   display: none;
 }
 
-.circle-progress {
+.project-statistic-percentage .circle-progress {
   display: none;
 }
