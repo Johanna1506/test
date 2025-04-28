@@ -305,7 +305,7 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
 }
 
 /* action circle to bar */
-.grid__item {
+/* .grid__item {
   position: relative;
 }
 
@@ -329,7 +329,7 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
   background-color: var(--color-secondary);
   border-radius: 10px;
   transition: width 0.3s ease;
-}
+} */
 
 .circle-progress[value="0"] ~ div::after {
   width: 0%;
