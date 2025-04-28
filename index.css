@@ -9,6 +9,7 @@
 @import url("./connexion.css");
 @import url("./kyc.css");
 @import url("./404.css");
+@import url("./footer.css");
 @font-face {
   font-family: "centurygothic";
   src: url("./fonts/centurygothic.ttf") format("truetype");
