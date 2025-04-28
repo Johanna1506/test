@@ -303,3 +303,478 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
     margin: 0 !important;
   }
 }
+
+/* action circle to bar */
+.grid__item {
+  position: relative;
+}
+
+.grid__item > div {
+  width: 200px !important;
+  height: 20px !important;
+  background-color: var(--color-primary);
+  border-radius: 10px;
+  position: relative;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.grid__item > div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: var(--color-secondary);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.circle-progress[value="0"] ~ div::after {
+  width: 0%;
+}
+
+.circle-progress[value="1"] ~ div::after {
+  width: 1%;
+}
+
+.circle-progress[value="2"] ~ div::after {
+  width: 2%;
+}
+
+.circle-progress[value="3"] ~ div::after {
+  width: 3%;
+}
+
+.circle-progress[value="4"] ~ div::after {
+  width: 4%;
+}
+
+.circle-progress[value="5"] ~ div::after {
+  width: 5%;
+}
+
+.circle-progress[value="6"] ~ div::after {
+  width: 6%;
+}
+
+.circle-progress[value="7"] ~ div::after {
+  width: 7%;
+}
+
+.circle-progress[value="8"] ~ div::after {
+  width: 8%;
+}
+
+.circle-progress[value="9"] ~ div::after {
+  width: 9%;
+}
+
+.circle-progress[value="10"] ~ div::after {
+  width: 10%;
+}
+
+.circle-progress[value="11"] ~ div::after {
+  width: 11%;
+}
+
+.circle-progress[value="12"] ~ div::after {
+  width: 12%;
+}
+
+.circle-progress[value="13"] ~ div::after {
+  width: 13%;
+}
+
+.circle-progress[value="14"] ~ div::after {
+  width: 14%;
+}
+
+.circle-progress[value="15"] ~ div::after {
+  width: 15%;
+}
+
+.circle-progress[value="16"] ~ div::after {
+  width: 16%;
+}
+
+.circle-progress[value="17"] ~ div::after {
+  width: 17%;
+}
+
+.circle-progress[value="18"] ~ div::after {
+  width: 18%;
+}
+
+.circle-progress[value="19"] ~ div::after {
+  width: 19%;
+}
+
+.circle-progress[value="20"] ~ div::after {
+  width: 20%;
+}
+
+.circle-progress[value="21"] ~ div::after {
+  width: 21%;
+}
+
+.circle-progress[value="22"] ~ div::after {
+  width: 22%;
+}
+
+.circle-progress[value="23"] ~ div::after {
+  width: 23%;
+}
+
+.circle-progress[value="24"] ~ div::after {
+  width: 24%;
+}
+
+.circle-progress[value="25"] ~ div::after {
+  width: 25%;
+}
+
+.circle-progress[value="26"] ~ div::after {
+  width: 26%;
+}
+
+.circle-progress[value="27"] ~ div::after {
+  width: 27%;
+}
+
+.circle-progress[value="28"] ~ div::after {
+  width: 28%;
+}
+
+.circle-progress[value="29"] ~ div::after {
+  width: 29%;
+}
+
+.circle-progress[value="30"] ~ div::after {
+  width: 30%;
+}
+
+.circle-progress[value="31"] ~ div::after {
+  width: 31%;
+}
+
+.circle-progress[value="32"] ~ div::after {
+  width: 32%;
+}
+
+.circle-progress[value="33"] ~ div::after {
+  width: 33%;
+}
+
+.circle-progress[value="34"] ~ div::after {
+  width: 34%;
+}
+
+.circle-progress[value="35"] ~ div::after {
+  width: 35%;
+}
+
+.circle-progress[value="36"] ~ div::after {
+  width: 36%;
+}
+
+.circle-progress[value="37"] ~ div::after {
+  width: 37%;
+}
+
+.circle-progress[value="38"] ~ div::after {
+  width: 38%;
+}
+
+.circle-progress[value="39"] ~ div::after {
+  width: 39%;
+}
+
+.circle-progress[value="40"] ~ div::after {
+  width: 40%;
+}
+
+.circle-progress[value="41"] ~ div::after {
+  width: 41%;
+}
+
+.circle-progress[value="42"] ~ div::after {
+  width: 42%;
+}
+
+.circle-progress[value="43"] ~ div::after {
+  width: 43%;
+}
+
+.circle-progress[value="44"] ~ div::after {
+  width: 44%;
+}
+
+.circle-progress[value="45"] ~ div::after {
+  width: 45%;
+}
+
+.circle-progress[value="46"] ~ div::after {
+  width: 46%;
+}
+
+.circle-progress[value="47"] ~ div::after {
+  width: 47%;
+}
+
+.circle-progress[value="48"] ~ div::after {
+  width: 48%;
+}
+
+.circle-progress[value="49"] ~ div::after {
+  width: 49%;
+}
+
+.circle-progress[value="50"] ~ div::after {
+  width: 50%;
+}
+
+.circle-progress[value="51"] ~ div::after {
+  width: 51%;
+}
+
+.circle-progress[value="52"] ~ div::after {
+  width: 52%;
+}
+
+.circle-progress[value="53"] ~ div::after {
+  width: 53%;
+}
+
+.circle-progress[value="54"] ~ div::after {
+  width: 54%;
+}
+
+.circle-progress[value="55"] ~ div::after {
+  width: 55%;
+}
+
+.circle-progress[value="56"] ~ div::after {
+  width: 56%;
+}
+
+.circle-progress[value="57"] ~ div::after {
+  width: 57%;
+}
+
+.circle-progress[value="58"] ~ div::after {
+  width: 58%;
+}
+
+.circle-progress[value="59"] ~ div::after {
+  width: 59%;
+}
+
+.circle-progress[value="60"] ~ div::after {
+  width: 60%;
+}
+
+.circle-progress[value="61"] ~ div::after {
+  width: 61%;
+}
+
+.circle-progress[value="62"] ~ div::after {
+  width: 62%;
+}
+
+.circle-progress[value="63"] ~ div::after {
+  width: 63%;
+}
+
+.circle-progress[value="64"] ~ div::after {
+  width: 64%;
+}
+
+.circle-progress[value="65"] ~ div::after {
+  width: 65%;
+}
+
+.circle-progress[value="66"] ~ div::after {
+  width: 66%;
+}
+
+.circle-progress[value="67"] ~ div::after {
+  width: 67%;
+}
+
+.circle-progress[value="68"] ~ div::after {
+  width: 68%;
+}
+
+.circle-progress[value="69"] ~ div::after {
+  width: 69%;
+}
+
+.circle-progress[value="70"] ~ div::after {
+  width: 70%;
+}
+
+.circle-progress[value="71"] ~ div::after {
+  width: 71%;
+}
+
+.circle-progress[value="72"] ~ div::after {
+  width: 72%;
+}
+
+.circle-progress[value="73"] ~ div::after {
+  width: 73%;
+}
+
+.circle-progress[value="74"] ~ div::after {
+  width: 74%;
+}
+
+.circle-progress[value="75"] ~ div::after {
+  width: 75%;
+}
+
+.circle-progress[value="76"] ~ div::after {
+  width: 76%;
+}
+
+.circle-progress[value="77"] ~ div::after {
+  width: 77%;
+}
+
+.circle-progress[value="78"] ~ div::after {
+  width: 78%;
+}
+
+.circle-progress[value="79"] ~ div::after {
+  width: 79%;
+}
+
+.circle-progress[value="80"] ~ div::after {
+  width: 80%;
+}
+
+.circle-progress[value="81"] ~ div::after {
+  width: 81%;
+}
+
+.circle-progress[value="82"] ~ div::after {
+  width: 82%;
+}
+
+.circle-progress[value="83"] ~ div::after {
+  width: 83%;
+}
+
+.circle-progress[value="84"] ~ div::after {
+  width: 84%;
+}
+
+.circle-progress[value="85"] ~ div::after {
+  width: 85%;
+}
+
+.circle-progress[value="86"] ~ div::after {
+  width: 86%;
+}
+
+.circle-progress[value="87"] ~ div::after {
+  width: 87%;
+}
+
+.circle-progress[value="88"] ~ div::after {
+  width: 88%;
+}
+
+.circle-progress[value="89"] ~ div::after {
+  width: 89%;
+}
+
+.circle-progress[value="90"] ~ div::after {
+  width: 90%;
+}
+
+.circle-progress[value="91"] ~ div::after {
+  width: 91%;
+}
+
+.circle-progress[value="92"] ~ div::after {
+  width: 92%;
+}
+
+.circle-progress[value="93"] ~ div::after {
+  width: 93%;
+}
+
+.circle-progress[value="94"] ~ div::after {
+  width: 94%;
+}
+
+.circle-progress[value="95"] ~ div::after {
+  width: 95%;
+}
+
+.circle-progress[value="96"] ~ div::after {
+  width: 96%;
+}
+
+.circle-progress[value="97"] ~ div::after {
+  width: 97%;
+}
+
+.circle-progress[value="98"] ~ div::after {
+  width: 98%;
+}
+
+.circle-progress[value="99"] ~ div::after {
+  width: 99%;
+}
+
+.circle-progress[value="100"] ~ div::after {
+  width: 100%;
+}
+
+.circle-progress[value^="1"] ~ div::after {
+  width: 100%;
+}
+
+.circle-progress[value^="2"] ~ div::after {
+  width: 100%;
+}
+
+.circle-progress[value^="3"] ~ div::after {
+  width: 100%;
+}
+
+.circle-progress[value^="4"] ~ div::after {
+  width: 100%;
+}
+
+.circle-progress[value^="5"] ~ div::after {
+  width: 100%;
+}
+
+.circle-progress[value^="6"] ~ div::after {
+  width: 100%;
+}
+
+.circle-progress[value^="7"] ~ div::after {
+  width: 100%;
+}
+
+.circle-progress[value^="8"] ~ div::after {
+  width: 100%;
+}
+
+.circle-progress[value^="9"] ~ div::after {
+  width: 100%;
+}
+
+.grid__item canvas {
+  display: none;
+}
+
+.circle-progress {
+  display: none;
+}
