@@ -310,6 +310,7 @@ body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project {
 }
 
 .project-statistic-percentage > div {
+  display: block !important;
   width: 200px !important;
   height: 20px !important;
   background-color: var(--color-primary);
