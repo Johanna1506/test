@@ -67,7 +67,7 @@ button:hover,
   top: 70px;
   right: 0px;
   z-index: 999;
-  animation: fadeOut 10s forwards;
+  animation: fadeOut 8s forwards;
 }
 
 .flash .success.wrapper,
