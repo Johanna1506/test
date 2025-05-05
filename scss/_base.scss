@@ -1,0 +1,112 @@
+// Styles de base
+body {
+  margin: 0;
+  background-color: var(--color-highlight);
+  color: var(--color-dark);
+  font-family: var(--font-family-main);
+  font-size: var(--font-size-base);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li {
+  font-family: var(--font-family-main);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button-wrapper a,
+.btn {
+  background-color: var(--color-secondary) !important;
+  color: var(--color-light) !important;
+  border: none !important;
+  text-decoration: none !important;
+  padding: 12px 20px !important;
+  border-radius: var(--border-radius-medium) !important;
+  text-align: center !important;
+  height: 50px;
+  width: fit-content !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+}
+
+.btn:empty:not(input),
+input[type="submit"]:not([value]) {
+  visibility: hidden !important;
+}
+
+button,
+.btn {
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  padding: var(--spacing-medium) var(--spacing-large);
+  border-radius: var(--border-radius-medium);
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: var(--color-hover);
+  }
+}
+
+.btn-icon {
+  background-color: inherit !important;
+  color: initial !important;
+}
+
+// Flash messages
+.flash {
+  position: absolute;
+  top: 70px;
+  right: 0px;
+  z-index: 999;
+  animation: fadeOut 8s forwards;
+
+  .success.wrapper,
+  .notice.wrapper {
+    background-color: var(--color-hover) !important;
+    color: var(--color-light) !important;
+  }
+
+  .alert {
+    background-color: var(--color-warning) !important;
+    color: var(--color-light) !important;
+  }
+
+  .fa-times {
+    color: var(--color-light) !important;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}

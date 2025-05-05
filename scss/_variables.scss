@@ -1,4 +1,4 @@
-// Couleurs principales
+// Variables SCSS
 $color-primary: #1e3e36;
 $color-secondary: #f0ba58;
 $color-warning: #f09c58;
@@ -28,3 +28,26 @@ $border-radius-large: 12px;
 
 // Hauteurs
 $header-height: 70px;
+
+// Variables CSS pour la compatibilité
+:root {
+  --color-primary: #{$color-primary};
+  --color-secondary: #{$color-secondary};
+  --color-warning: #{$color-warning};
+  --color-background: #{$color-background};
+  --color-light: #{$color-light};
+  --color-dark: #{$color-dark};
+  --color-highlight: #{$color-highlight};
+  --color-hover: #{$color-hover};
+  --font-family-main: #{$font-family-main};
+  --font-size-base: #{$font-size-base};
+  --font-size-large: #{$font-size-large};
+  --font-size-small: #{$font-size-small};
+  --spacing-small: #{$spacing-small};
+  --spacing-medium: #{$spacing-medium};
+  --spacing-large: #{$spacing-large};
+  --border-radius-small: #{$border-radius-small};
+  --border-radius-medium: #{$border-radius-medium};
+  --border-radius-large: #{$border-radius-large};
+  --header-height: #{$header-height};
+}

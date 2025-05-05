@@ -1,0 +1,178 @@
+// Styles de connexion
+.new-session-registration {
+  .background-low-color {
+    background-color: var(--color-highlight) !important;
+  }
+
+  a {
+    color: var(--color-primary) !important;
+  }
+
+  .fa-sign-in {
+    display: none !important;
+  }
+
+  .portable--one-whole {
+    > .grid {
+      margin-left: 0 !important;
+
+      > .grid__item {
+        padding: var(--spacing-large) !important;
+        background-color: var(--color-background) !important;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+          0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        border-radius: var(--border-radius-medium) !important;
+      }
+    }
+  }
+
+  .grid {
+    margin-left: 0 !important;
+  }
+
+  #sign_in {
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: inherit !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+      padding: 0 !important;
+
+      > .form-group {
+        width: 80%;
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-medium);
+
+        .user_remember_me {
+          margin-top: var(--spacing-large);
+        }
+
+        .password,
+        .email {
+          border-radius: var(--border-radius-small);
+          width: auto;
+          min-width: 100%;
+          text-align: start;
+        }
+      }
+
+      > .milli {
+        width: 80% !important;
+        margin-top: var(--spacing-large) !important;
+      }
+    }
+  }
+}
+
+#new_user_session {
+  > .text--center {
+    margin-top: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-large);
+
+    br {
+      display: none !important;
+    }
+
+    #user_submit,
+    #user_submit_sign_up {
+      height: auto !important;
+      margin: var(--spacing-small) auto !important;
+    }
+
+    > .k-padding-5 {
+      order: 3;
+    }
+  }
+}
+
+// Sign-in and Sign-up
+#new_session {
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: inherit !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: var(--spacing-medium) !important;
+  }
+
+  .fa {
+    display: none !important;
+  }
+
+  .background-low-color {
+    background-color: var(--color-highlight) !important;
+
+    .card {
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-medium);
+        width: 80% !important;
+
+        .password,
+        .email,
+        .select {
+          border-radius: var(--border-radius-small) !important;
+          width: auto;
+          min-width: 100%;
+          text-align: start;
+        }
+      }
+    }
+
+    > .grid {
+      margin: 42px 0 !important;
+    }
+  }
+
+  .grid__item {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+#new_session .background-low-color > .grid,
+#new_session #grid_session,
+#grid_session .grid {
+  margin: 0 !important;
+}
+
+#grid_session {
+  display: flex;
+  gap: var(--spacing-large) !important;
+  padding: 22px 0;
+
+  > .portable--one-whole {
+    background-color: var(--color-background) !important;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+      0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    border-radius: var(--border-radius-medium) !important;
+    padding: var(--spacing-medium) !important;
+  }
+}
+
+// Media queries
+@media screen and (max-width: 600px) {
+  .new-session-registration {
+    .background-low-color {
+      padding: 0 !important;
+    }
+  }
+
+  #grid_session {
+    flex-direction: column-reverse;
+  }
+}

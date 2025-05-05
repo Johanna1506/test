@@ -1,0 +1,32 @@
+// Styles de navigation
+.k-header {
+  background-color: var(--color-primary) !important;
+
+  .k-menu__nav {
+    > .k-menu__item {
+      > .k-menu__link {
+        .k-menu__link-text {
+          color: var(--color-background) !important;
+        }
+      }
+
+      &:hover {
+        > .k-menu__link {
+          .k-menu__link-text {
+            color: var(--color-primary) !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+#k_header_menu {
+  > .k-menu__nav {
+    > .k-menu__item {
+      > a:has(img) {
+        width: 200px !important;
+      }
+    }
+  }
+}
