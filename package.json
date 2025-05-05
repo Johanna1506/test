@@ -1,0 +1,12 @@
+{
+    "name": "prosperia",
+    "version": "1.0.0",
+    "description": "Prosperia website",
+    "scripts": {
+        "sass": "sass scss:css --watch",
+        "sass:build": "sass scss:css --style compressed"
+    },
+    "devDependencies": {
+        "sass": "^1.71.1"
+    }
+}
