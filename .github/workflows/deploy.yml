@@ -46,11 +46,12 @@ jobs:
           cp *.css deploy/
 
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          folder: deploy
-          branch: gh-pages
-          clean: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./deploy
+          publish_branch: gh-pages
+          force_orphan: true
 
       - name: Comment PR
         if: github.event_name == 'pull_request'
