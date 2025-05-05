@@ -45,12 +45,19 @@ jobs:
           cp css/* deploy/
           cp *.css deploy/
 
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
         with:
-          folder: deploy
-          branch: gh-pages
-          clean: true
+          static_site_generator: other
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: deploy
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
 
       - name: Comment PR
         if: github.event_name == 'pull_request'
