@@ -1,0 +1,53 @@
+.top_text_zone {
+  background-color: var(--color-highlight);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top_text_zone h1 {
+  font-size: 2.2em;
+  text-align: center;
+  font-weight: bold !important;
+  text-transform: none !important;
+}
+
+.boxslider {
+  background-color: var(--color-background) !important;
+}
+#section_own_projects > .grid {
+  margin: 0 !important;
+  display: flex !important;
+  gap: 12px !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+#section_own_projects > .grid > .grid__item {
+  padding: 0 !important;
+  width: auto !important;
+}
+#projects_discover_section_explore {
+  display: none !important;
+}
+#projects_section_explore > .eight-tenths {
+  width: 100% !important;
+}
+@media screen and (max-width: 600px) {
+  #section_own_projects > .grid {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+}
+
+/* Condition */
+
+/* #box_project_34771 {
+  display: none !important;
+}
+
+body:has(#desktop_default_client_space[href="/fr/users/406953/edit"])
+  #box_project_34771 {
+  display: block !important;
+} */

@@ -1,0 +1,83 @@
+#k_content,
+#fund_subscription_wizard {
+  background-color: var(--color-highlight) !important;
+}
+#k_content_body .k-portlet {
+  color: var(--color-primary) !important;
+  border-radius: var(--border-radius-large) !important;
+}
+.k-wizard-v2
+  .k-wizard-v2__nav
+  .k-wizard-v2__nav-items
+  .k-wizard-v2__nav-item
+  span,
+.k-wizard-v2
+  .k-wizard-v2__nav
+  .k-wizard-v2__nav-items
+  .k-wizard-v2__nav-item
+  i {
+  min-width: 2.7rem;
+  min-height: 2.7rem;
+  background-color: var(--color-hover) !important;
+  color: var(--color-highlight) !important;
+}
+.k-wizard-v2
+  .k-wizard-v2__nav
+  .k-wizard-v2__nav-items
+  .k-wizard-v2__nav-item[data-kwizard-state="done"]
+  i {
+  background-color: var(--color-secondary) !important;
+  color: var(--color-background) !important;
+}
+.k-wizard-v2
+  .k-wizard-v2__nav
+  .k-wizard-v2__nav-items
+  .k-wizard-v2__nav-item[data-kwizard-state="done"] {
+  color: var(--color-primary) !important;
+}
+.k-wizard-v2
+  .k-wizard-v2__nav
+  .k-wizard-v2__nav-items
+  .k-wizard-v2__nav-item[data-kwizard-state="current"]
+  span {
+  background-color: var(--color-primary) !important;
+  color: var(--color-background) !important;
+}
+.k-wizard-v2
+  .k-wizard-v2__nav
+  .k-wizard-v2__nav-items
+  .k-wizard-v2__nav-item[data-kwizard-state="current"] {
+  color: var(--color-primary) !important;
+}
+.k-portlet .k-portlet__head {
+  background-color: var(--color-background) !important;
+  color: var(--color-primary) !important;
+  border-bottom: 1px solid var(--color-background) !important;
+  border-top-left-radius: var(--border-radius-small) !important;
+  border-top-right-radius: var(--border-radius-small) !important;
+}
+.k-portlet .k-portlet__head .k-portlet__head-label .k-portlet__head-title {
+  color: var(--color-primary) !important;
+}
+#k_content_body input,
+#k_content_body select {
+  color: var(--color-primary) !important;
+  border-radius: var(--border-radius-small) !important;
+}
+
+#k_content_body input:focus,
+#k_content_body select:focus {
+  border: 1px solid var(--color-secondary) !important;
+}
+#k_content_body .k-form__actions input,
+#k_content_body input[type="submit"] {
+  color: var(--color-highlight) !important;
+}
+#k_content_body .alert {
+  background-color: var(--color-hover) !important;
+  border: 1px solid var(--color-hover) !important;
+  border-radius: var(--border-radius-small) !important;
+}
+#k_content_body input[type="radio"]:checked {
+  background-color: var(--color-primary) !important;
+}
