@@ -1,8 +1,11 @@
 name: Deploy to GitHub Pages
 
 on:
+  push:
+    branches: [main, master]
   pull_request:
     branches: [main, master]
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -50,6 +53,7 @@ jobs:
           clean: true
 
       - name: Comment PR
+        if: github.event_name == 'pull_request'
         uses: actions/github-script@v6
         with:
           script: |
