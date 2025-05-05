@@ -63,7 +63,7 @@ button:hover,
   background-color: var(--color-hover);
 }
 .flash {
-  position: fixed;
+  position: absolute;
   top: 70px;
   right: 0px;
   z-index: 999;

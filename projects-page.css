@@ -41,3 +41,14 @@
     align-items: center !important;
   }
 }
+
+/* Condition */
+
+#box_project_34771 {
+  display: none !important;
+}
+
+body:has(#desktop_default_client_space[href="/fr/users/406953/edit"])
+  #box_project_34771 {
+  display: block !important;
+}

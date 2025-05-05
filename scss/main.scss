@@ -1,0 +1,20 @@
+@import "variables";
+
+// Styles globaux
+body {
+  font-family: $font-family-main;
+  font-size: $font-size-base;
+  background-color: $color-background;
+  color: $color-dark;
+}
+
+// Vous pouvez maintenant commencer à utiliser les variables SCSS dans vos styles
+// Par exemple:
+// .button {
+//   background-color: $color-primary;
+//   padding: $spacing-medium;
+//   border-radius: $border-radius-small;
+//   &:hover {
+//     background-color: $color-hover;
+//   }
+// }
