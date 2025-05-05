@@ -29,12 +29,33 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Run Python script
+        run: python scripts/generate_scss.py
+
       - name: Build SCSS
         run: npm run sass:build
+
+      - name: Prepare deployment
+        run: |
+          mkdir -p deploy
+          cp css/* deploy/
+          cp *.css deploy/
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: css
+          folder: deploy
           branch: gh-pages
           clean: true
+
+      - name: Comment PR
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const deploymentUrl = `https://${context.repo.owner}.github.io/${context.repo.repo}/`;
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `🚀 Déploiement disponible sur: ${deploymentUrl}\n\nVous pouvez voir les changements en direct sur cette URL.`
+            });
