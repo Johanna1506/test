@@ -1,6 +1,5 @@
 .top_text_zone {
   background-color: var(--color-highlight);
-  height: 260px;
   color: var(--color-primary);
   display: flex;
   align-items: center;
