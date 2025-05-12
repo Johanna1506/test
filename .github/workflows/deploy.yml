@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
 jobs:
   build-and-deploy:
@@ -23,32 +20,14 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Install Python dependencies
-        run: |
-          python -m pip install --upgrade pip
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-
       - name: Run Python script
         run: python generate_css_rules.py
 
       - name: Deploy to GitHub Pages
         run: |
-          if [ "$GITHUB_EVENT_NAME" = "pull_request" ]; then
-            # Pour les PR, on déploie dans un dossier preview
-            DEPLOY_DIR="preview/${GITHUB_HEAD_REF}"
-            echo "Deploying to preview directory: $DEPLOY_DIR"
-            mkdir -p $DEPLOY_DIR
-            cp -r * $DEPLOY_DIR/
-            cd $DEPLOY_DIR
-          fi
-
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git checkout gh-pages || git checkout -b gh-pages
           git add .
-          git commit -m "Deploy to GitHub Pages [skip ci]"
+          git commit -m "Update site [skip ci]"
           git push origin gh-pages --force
-
-          if [ "$GITHUB_EVENT_NAME" = "pull_request" ]; then
-            echo "Preview URL: https://$GITHUB_REPOSITORY_OWNER.github.io/$GITHUB_REPOSITORY_NAME/preview/$GITHUB_HEAD_REF/"
-          fi
