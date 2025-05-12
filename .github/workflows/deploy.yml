@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy CSS to GitHub Pages
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -24,10 +24,9 @@ jobs:
         run: python generate_css_rules.py
 
       - name: Deploy to GitHub Pages
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git checkout gh-pages || git checkout -b gh-pages
-          git add .
-          git commit -m "Update site [skip ci]"
-          git push origin gh-pages --force
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          publish_branch: main
+          commit_message: "Update CSS [skip ci]"
