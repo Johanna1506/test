@@ -1,0 +1,338 @@
+// Styles de la page de projet
+.sticky-wrapper {
+  display: none !important;
+}
+
+#grid_horizontal_share_project {
+  width: 100% !important;
+  margin: 0 auto !important;
+
+  > .grid__item {
+    &:nth-of-type(1) {
+      width: 70% !important;
+    }
+
+    &:nth-of-type(2) {
+      width: 30% !important;
+
+      .card {
+        max-width: 590px !important;
+        min-width: auto !important;
+        min-height: auto !important;
+        max-height: none !important;
+      }
+    }
+  }
+}
+
+#section_nav_project {
+  padding-left: 30px !important;
+
+  .nav {
+    .nav_menu_align {
+      .menu-item {
+        padding: 12px 16px;
+        color: var(--color-primary) !important;
+
+        &.active {
+          border-color: var(--color-primary) !important;
+        }
+      }
+    }
+  }
+}
+
+.horizontal_project_logo,
+.horizontal_project_subtitle {
+  display: none;
+}
+
+#horizontal_card_project {
+  background-color: var(--color-background) !important;
+  border-radius: var(--border-radius-medium) var(--border-radius-medium) 0 0 !important;
+  color: var(--color-dark) !important;
+  margin: 60px 0 0 0 !important;
+  box-shadow: none !important;
+
+  .inside-project-category,
+  .inside-project-owner,
+  .amf_text_security {
+    display: none !important;
+  }
+
+  .inside-project-name {
+    margin: 12px 0 !important;
+    font-size: var(--font-size-large) !important;
+  }
+
+  .inside-project-tags {
+    .fa-tag,
+    .inside-project-localization {
+      display: none !important;
+    }
+
+    a {
+      background: var(--color-secondary) !important;
+      color: var(--color-light) !important;
+      padding: var(--spacing-small) var(--spacing-medium) !important;
+      border-radius: var(--border-radius-small) !important;
+      font-weight: bold !important;
+      min-height: 28px !important;
+      font-size: var(--font-size-small) !important;
+    }
+  }
+}
+
+body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project,
+body:has(.circle-progress) #horizontal_card_project {
+  padding-bottom: 62px !important;
+}
+
+.inside-project-financial-data {
+  text-align: start !important;
+  margin-top: 12px !important;
+
+  &::before {
+    content: "Rendement cible*";
+  }
+}
+
+.inside-project-status {
+  .grid {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    .grid__item {
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center !important;
+      width: auto !important;
+
+      .text--center {
+        text-align: left !important;
+      }
+
+      div {
+        display: flex !important;
+        flex-direction: row-reverse !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        width: auto !important;
+        gap: var(--spacing-small);
+        align-items: flex-start;
+
+        .milli {
+          font-size: var(--font-size-base) !important;
+          color: var(--color-dark) !important;
+          font-weight: bold !important;
+
+          &::before {
+            content: " : " !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+#show_tags {
+  padding: 0 !important;
+}
+
+.reward_btn--tag {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: var(--spacing-small) !important;
+
+  a {
+    background: var(--color-secondary) !important;
+    color: var(--color-light) !important;
+    padding: var(--spacing-small) var(--spacing-medium) !important;
+    border-radius: var(--border-radius-small) !important;
+    font-weight: bold !important;
+    min-height: 28px !important;
+    height: auto !important;
+    margin-bottom: var(--spacing-small);
+    width: fit-content !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    &::first-letter {
+      text-transform: uppercase !important;
+    }
+  }
+}
+
+.reward_tag_title {
+  text-align: start !important;
+}
+
+.infos-rewards {
+  .info-rewards {
+    h2 {
+      font-size: var(--font-size-large) !important;
+      font-weight: 700;
+      margin-bottom: var(--spacing-small) !important;
+      margin-top: var(--spacing-large) !important;
+    }
+
+    &:has(.bulletpoint) p {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      justify-content: flex-start !important;
+    }
+
+    .bulletpoint::before {
+      content: url("https://img.icons8.com/material-sharp/10/filled-circle.png") !important;
+      margin-right: var(--spacing-small) !important;
+    }
+  }
+}
+
+#statistics_project {
+  .horizontal_statistics.card {
+    position: initial !important;
+    background-color: transparent !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+
+    .title_horizontal_statistics,
+    .horizontal_expires_at {
+      display: none !important;
+    }
+  }
+}
+
+.horizontal_statistics {
+  .progress-bar {
+    background-color: var(--color-primary) !important;
+    max-width: 360px !important;
+    position: absolute !important;
+    top: 416px !important;
+    z-index: 99;
+    height: 20px !important;
+    border-radius: var(--border-radius-small);
+  }
+}
+
+#project-navbar-desktop {
+  background-color: var(--color-highlight) !important;
+  padding: var(--spacing-medium) var(--spacing-small);
+  border-top: 1px solid var(--color-dark) !important;
+  border-bottom: 1px solid var(--color-dark) !important;
+  position: sticky !important;
+  top: 0 !important;
+
+  .one-third {
+    .nav {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0 74px;
+    }
+  }
+}
+
+// Media queries
+@media (max-width: 1208px) {
+  .horizontal_statistics .progress-bar {
+    max-width: 300px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  #grid_horizontal_share_project {
+    > .grid__item {
+      &:nth-of-type(1) {
+        width: 100% !important;
+      }
+
+      &:nth-of-type(2) {
+        width: 100% !important;
+      }
+    }
+  }
+
+  .horizontal_statistics .progress-bar {
+    position: relative !important;
+    top: 0 !important;
+    max-width: 100% !important;
+  }
+
+  #project-navbar-desktop {
+    .header-project-menu--portable {
+      > .grid {
+        display: flex !important;
+        flex-direction: column !important;
+      }
+
+      #js-show-project-menu {
+        display: block !important;
+      }
+    }
+
+    #js-header-project-nav {
+      display: none !important;
+    }
+  }
+}
+
+// Styles pour les statistiques de projet
+.project-statistic-percentage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+      content: attr(data-value);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: var(--font-size-large);
+      font-weight: bold;
+      color: var(--color-dark);
+    }
+  }
+}
+
+// Styles pour les cercles de progression
+@for $i from 0 through 100 {
+  .circle-progress[value="#{$i}"] ~ div::after {
+    content: "#{$i}%";
+  }
+}
+
+.project-statistic-percentage {
+  canvas {
+    width: 100%;
+    height: 100%;
+  }
+
+  .circle-progress {
+    display: none;
+  }
+}
+
+.project-statistic {
+  .submit.center #button_back_project {
+    margin: 0 auto;
+  }
+}
