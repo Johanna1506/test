@@ -34,22 +34,21 @@ jobs:
       - name: Deploy to GitHub Pages
         run: |
           if [ "$GITHUB_EVENT_NAME" = "pull_request" ]; then
-            # Pour les PR, on déploie sur une branche preview
-            BRANCH_NAME="preview-${GITHUB_HEAD_REF}"
-            echo "Deploying to preview branch: $BRANCH_NAME"
-          else
-            # Pour main, on déploie sur gh-pages comme d'habitude
-            BRANCH_NAME="gh-pages"
-            echo "Deploying to production branch: $BRANCH_NAME"
+            # Pour les PR, on déploie dans un dossier preview
+            DEPLOY_DIR="preview/${GITHUB_HEAD_REF}"
+            echo "Deploying to preview directory: $DEPLOY_DIR"
+            mkdir -p $DEPLOY_DIR
+            cp -r * $DEPLOY_DIR/
+            cd $DEPLOY_DIR
           fi
 
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git checkout -b $BRANCH_NAME || git checkout $BRANCH_NAME
+          git checkout gh-pages || git checkout -b gh-pages
           git add .
           git commit -m "Deploy to GitHub Pages [skip ci]"
-          git push origin $BRANCH_NAME --force
+          git push origin gh-pages --force
 
           if [ "$GITHUB_EVENT_NAME" = "pull_request" ]; then
-            echo "Preview URL: https://$GITHUB_REPOSITORY_OWNER.github.io/$GITHUB_REPOSITORY_NAME/$BRANCH_NAME/"
+            echo "Preview URL: https://$GITHUB_REPOSITORY_OWNER.github.io/$GITHUB_REPOSITORY_NAME/preview/$GITHUB_HEAD_REF/"
           fi
