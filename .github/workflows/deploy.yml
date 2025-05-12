@@ -1,0 +1,74 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+# Permissions explicites pour chaque scope nécessaire
+permissions:
+  contents: write # Pour pousser sur les branches
+  pages: write # Pour déployer sur GitHub Pages
+  id-token: write # Pour l'authentification
+  pull-requests: write # Pour commenter les PRs
+  checks: write # Pour mettre à jour le statut des checks
+  statuses: write # Pour mettre à jour les statuts
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Python script
+        run: python scripts/generate_scss.py
+
+      - name: Build SCSS
+        run: npm run sass:build
+
+      - name: Prepare deployment
+        run: |
+          mkdir -p deploy
+          cp css/* deploy/
+          cp *.css deploy/
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./deploy
+          publish_branch: ${{ github.event_name == 'pull_request' && format('preview-{0}', github.event.pull_request.number) || 'gh-pages' }}
+          force_orphan: true
+          commit_message: "Deploy to GitHub Pages"
+
+      - name: Comment PR
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const previewBranch = `preview-${context.issue.number}`;
+            const deploymentUrl = `https://${context.repo.owner}.github.io/${context.repo.repo}/${previewBranch}/`;
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `🚀 Prévisualisation disponible sur: ${deploymentUrl}\n\nVous pouvez voir les changements en direct sur cette URL.`
+            });
