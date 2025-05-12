@@ -1,0 +1,55 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Run Python script
+        run: python generate_css_rules.py
+
+      - name: Deploy to GitHub Pages
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = "pull_request" ]; then
+            # Pour les PR, on déploie sur une branche preview
+            BRANCH_NAME="preview-${GITHUB_HEAD_REF}"
+            echo "Deploying to preview branch: $BRANCH_NAME"
+          else
+            # Pour main, on déploie sur gh-pages comme d'habitude
+            BRANCH_NAME="gh-pages"
+            echo "Deploying to production branch: $BRANCH_NAME"
+          fi
+
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git checkout -b $BRANCH_NAME || git checkout $BRANCH_NAME
+          git add .
+          git commit -m "Deploy to GitHub Pages [skip ci]"
+          git push origin $BRANCH_NAME --force
+
+          if [ "$GITHUB_EVENT_NAME" = "pull_request" ]; then
+            echo "Preview URL: https://$GITHUB_REPOSITORY_OWNER.github.io/$GITHUB_REPOSITORY_NAME/$BRANCH_NAME/"
+          fi
