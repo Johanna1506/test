@@ -1,0 +1,11 @@
+{
+    "name": "prosperia",
+    "version": "1.0.0",
+    "description": "Prosperia website",
+    "scripts": {
+        "generate:projects-css": "python3 generate_css_rules.py"
+    },
+    "devDependencies": {
+        "sass": "^1.71.1"
+    }
+}

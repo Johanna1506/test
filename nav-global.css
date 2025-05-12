@@ -1,0 +1,382 @@
+@font-face {
+  font-family: "centurygothic";
+  src: url("./fonts/centurygothic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "centurygothic";
+  src: url("./fonts/centurygothic_bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-dark);
+  font-family: "centurygothic", Arial, sans-serif;
+}
+.header-nav-prosperia pre,
+.header-nav-prosperia code {
+  font-family: "centurygothic", Arial, sans-serif !important;
+  font-size: var(--font-size-base) !important;
+  margin: 0 !important;
+}
+.header-nav-prosperia nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  padding: var(--spacing-small) var(--spacing-large);
+  height: var(--header-height);
+  font-family: "centurygothic", Arial, sans-serif;
+}
+.header-nav-prosperia .logo {
+  display: flex;
+  align-items: center;
+}
+.header-nav-prosperia .nav-links {
+  max-width: 1080px;
+  display: flex;
+  list-style: none;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.header-nav-prosperia .nav-links li {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header-nav-prosperia .nav-links a {
+  color: var(--color-light);
+  text-decoration: none;
+  padding: 0 var(--spacing-medium);
+  display: block;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  font-size: var(--font-size-small);
+  letter-spacing: 0.2px;
+}
+.header-nav-prosperia .nav-links a:hover {
+  color: var(--color-secondary);
+}
+.header-nav-prosperia .drop-down {
+  position: relative;
+}
+
+.header-nav-prosperia .drop-down-toggle {
+  position: relative;
+  padding-right: 30px !important;
+}
+.header-nav-prosperia .drop-down-toggle::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  width: 8px;
+  height: 14px;
+  transform: translateY(-50%) rotate(90deg);
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.11807 7.61797C7.45986 7.27617 7.45986 6.72109 7.11807 6.3793L1.86807 1.1293C1.52627 0.787499 0.971191 0.787499 0.629395 1.1293C0.287598 1.47109 0.287598 2.02617 0.629395 2.36797L5.26143 7L0.632129 11.632C0.290332 11.9738 0.290332 12.5289 0.632129 12.8707C0.973926 13.2125 1.529 13.2125 1.8708 12.8707L7.1208 7.6207L7.11807 7.61797Z' fill='white'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.3s ease, background-image 0.3s ease;
+}
+.header-nav-prosperia .drop-down:hover .drop-down-toggle::after {
+  transform: translateY(-50%) rotate(270deg);
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.11807 7.61797C7.45986 7.27617 7.45986 6.72109 7.11807 6.3793L1.86807 1.1293C1.52627 0.787499 0.971191 0.787499 0.629395 1.1293C0.287598 1.47109 0.287598 2.02617 0.629395 2.36797L5.26143 7L0.632129 11.632C0.290332 11.9738 0.290332 12.5289 0.632129 12.8707C0.973926 13.2125 1.529 13.2125 1.8708 12.8707L7.1208 7.6207L7.11807 7.61797Z' fill='%23f0ba58'%3E%3C/path%3E%3C/svg%3E");
+}
+.header-nav-prosperia .drop-down-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--color-primary);
+  min-width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  z-index: 100;
+  padding: var(--spacing-small) 0;
+  margin: 0;
+  border-radius: 0 0 var(--border-radius-medium) var(--border-radius-medium);
+  overflow: hidden;
+}
+.header-nav-prosperia .drop-down-menu li {
+  width: 100%;
+  height: auto;
+}
+.header-nav-prosperia .drop-down-menu a {
+  padding: var(--spacing-medium) var(--spacing-large);
+  width: 100%;
+}
+.header-nav-prosperia .drop-down-menu a:hover {
+  color: var(--color-secondary);
+}
+.header-nav-prosperia .drop-down:hover .drop-down-menu {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+  transform: translateY(0);
+}
+.header-nav-prosperia .nav-links .btn-login,
+.header-nav-prosperia .btn-login {
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  text-decoration: none;
+  padding: var(--spacing-medium) var(--spacing-large);
+  border-radius: var(--border-radius-medium);
+  text-align: center;
+  height: 50px;
+}
+.header-nav-prosperia .logo + .btn-login {
+  display: none;
+}
+.header-nav-prosperia .nav-links .btn-login:hover {
+  background-color: var(--color-hover);
+  color: var(--color-light);
+}
+/* === BURGER MENU === */
+.header-nav-prosperia #menu-toggle {
+  display: none;
+}
+
+.header-nav-prosperia .burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  gap: var(--spacing-small);
+}
+
+.header-nav-prosperia .burger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: var(--color-light);
+  transition: all 0.3s ease;
+  border-radius: var(--border-radius-small);
+}
+.header-nav-prosperia #menu-toggle {
+  display: none;
+}
+.header-nav-prosperia .burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 200;
+}
+.header-nav-prosperia .burger span {
+  display: block;
+  height: 3px;
+  background: var(--color-light);
+  border-radius: var(--border-radius-small);
+  transition: all 0.3s ease;
+}
+main,
+footer {
+  padding: var(--spacing-large);
+}
+
+/* === MENU PERSONNALISÉ MIPISE === */
+.personalized_menu_right .header_locale {
+  display: none !important;
+}
+.header-right-color {
+  color: var(--color-light) !important;
+}
+.personalized_menu_right {
+  display: none;
+}
+
+body:has(#desktop_default_client_space) .personalized_menu_right {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: var(--spacing-large);
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+body:has(#desktop_default_client_space) .btn-login {
+  display: none;
+}
+body:has(#desktop_default_client_space) .nav-links {
+  margin-right: 200px;
+}
+
+#desktop_default_client_space:not([style*="display: none"])
+  ~ *
+  .personalized_menu_right {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: var(--spacing-large);
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+#markdown_platform_manager_space {
+  position: fixed;
+  top: 60px;
+  right: 0;
+  background-color: var(--color-secondary);
+  padding: var(--spacing-medium);
+  color: var(--color-light);
+}
+
+#desktop_default_client_space:not([style*="display: none"]) ~ * .btn-login {
+  display: none;
+}
+
+li:has(#desktop_default_client_space)::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  width: 8px;
+  height: 14px;
+  transform: translateY(-50%) rotate(90deg);
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.11807 7.61797C7.45986 7.27617 7.45986 6.72109 7.11807 6.3793L1.86807 1.1293C1.52627 0.787499 0.971191 0.787499 0.629395 1.1293C0.287598 1.47109 0.287598 2.02617 0.629395 2.36797L5.26143 7L0.632129 11.632C0.290332 11.9738 0.290332 12.5289 0.632129 12.8707C0.973926 13.2125 1.529 13.2125 1.8708 12.8707L7.1208 7.6207L7.11807 7.61797Z' fill='white'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.3s ease, background-image 0.3s ease;
+}
+
+li:has(#desktop_default_client_space):hover::after {
+  transform: translateY(-50%) rotate(270deg);
+}
+
+.personalized_menu_user_space {
+  background-color: var(--color-primary) !important;
+  min-width: 200px;
+  padding: var(--spacing-small);
+  margin: 0;
+  border-radius: 0 0 var(--border-radius-medium) var(--border-radius-medium);
+  overflow: hidden;
+}
+ul.menu_user_space a,
+ul.menu_user_space strong {
+  padding: var(--spacing-medium) var(--spacing-large);
+  font-size: var(--font-size-small);
+}
+body.p-prosperia-invest ul.menu_user_space a:hover {
+  color: var(--color-secondary) !important;
+  background-color: inherit !important;
+}
+
+@media (max-width: 1024px) {
+  .header-nav-prosperia .logo {
+    z-index: 200;
+  }
+  .header-nav-prosperia .burger {
+    display: flex;
+  }
+
+  .header-nav-prosperia .nav-links {
+    overflow: scroll;
+    position: absolute;
+    top: var(--header-height);
+    left: 0;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: var(--color-primary);
+    width: 100vw;
+    height: 92vh;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    z-index: 100;
+  }
+
+  #menu-toggle:checked ~ .nav-links {
+    transform: translateY(0);
+    position: fixed;
+  }
+
+  #menu-toggle:checked + .burger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 7px);
+  }
+
+  #menu-toggle:checked + .burger span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #menu-toggle:checked + .burger span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -7px);
+  }
+
+  .header-nav-prosperia .nav-links li {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin: var(--spacing-small) 0;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .header-nav-prosperia .drop-down:hover {
+    height: auto;
+  }
+  .header-nav-prosperia .btn-login {
+    margin: 0 auto;
+  }
+
+  .header-nav-prosperia .nav-links a {
+    font-size: 20px;
+    height: auto;
+    padding: var(--spacing-small);
+    text-align: start;
+  }
+  .header-nav-prosperia .drop-down:hover .drop-down-menu {
+    position: initial;
+    box-shadow: none;
+    margin-left: var(--spacing-medium);
+    font-size: 20px;
+  }
+  .header-nav-prosperia .drop-down:hover .drop-down-menu a span {
+    font-size: var(--font-size-base);
+  }
+  .header-nav-prosperia .nav-links .btn-login {
+    display: none;
+  }
+  .header-nav-prosperia .logo + .btn-login {
+    display: block;
+    z-index: 200;
+    font-size: var(--font-size-base) !important;
+  }
+
+  /* MIPISE BUGER MENU PERSONALISATION */
+
+  body:has(#desktop_default_client_space) .personalized_menu_right {
+    display: none !important;
+  }
+  #menu-toggle:checked ~ .personalized_menu_right {
+    display: block !important;
+  }
+
+  #header .grid--middle {
+    display: none !important;
+  }
+  #header > #js-header-nav {
+    display: block !important;
+    border: none !important;
+    clip: unset !important;
+    height: auto !important;
+    margin: 0 !important;
+    overflow: auto !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 100% !important;
+  }
+}
