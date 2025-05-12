@@ -1,20 +1,9 @@
 import csv
 import os
 
-def generate_scss():
-    # Lire le CSV
-    user_projects = {}
-    with open('csv/clubdeal.csv', 'r') as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            user_id = row['userid']
-            project_id = row['projectid']
-            if user_id not in user_projects:
-                user_projects[user_id] = []
-            user_projects[user_id].append(project_id)
-
-    # Générer le SCSS
-    scss_content = """// Styles de la page des projets
+def generate_base_scss():
+    # Styles généraux
+    base_scss_content = """// Styles de base de la page des projets
 .top_text_zone {
   background-color: var(--color-highlight);
   height: 260px;
@@ -74,24 +63,46 @@ def generate_scss():
 [id^="box_project_"] {
   display: none !important;
 }
-
 """
+    # Écrire le fichier de styles de base
+    with open('scss/_projects-page-base.scss', 'w') as f:
+        f.write(base_scss_content)
 
+def generate_user_rules_scss():
+    # Lire le CSV
+    user_projects = {}
+    with open('csv/clubdeal.csv', 'r') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            user_id = row['userid']
+            project_id = row['projectid']
+            if user_id not in user_projects:
+                user_projects[user_id] = []
+            user_projects[user_id].append(project_id)
+
+    # Générer le SCSS pour les règles utilisateur
+    rules_scss_content = """// Règles de visibilité des projets par utilisateur
+// Ce fichier est généré automatiquement, ne pas modifier manuellement
+"""
     # Ajouter les règles pour chaque utilisateur
     for user_id, project_ids in user_projects.items():
-        scss_content += f"""
+        rules_scss_content += f"""
 // Afficher les projets pour l'utilisateur {user_id}
 body:has(#desktop_default_client_space[href="/fr/users/{user_id}/edit"]) {{
 """
         for project_id in project_ids:
-            scss_content += f"  #box_project_{project_id} {{\n"
-            scss_content += "    display: block !important;\n"
-            scss_content += "  }\n"
-        scss_content += "}\n"
+            rules_scss_content += f"  #box_project_{project_id} {{\n"
+            rules_scss_content += "    display: block !important;\n"
+            rules_scss_content += "  }\n"
+        rules_scss_content += "}\n"
 
-    # Écrire le fichier SCSS
-    with open('scss/_projects-page.scss', 'w') as f:
-        f.write(scss_content)
+    # Écrire le fichier de règles utilisateur
+    with open('scss/_projects-page-rules.scss', 'w') as f:
+        f.write(rules_scss_content)
+
+def generate_scss():
+    generate_base_scss()
+    generate_user_rules_scss()
 
 if __name__ == "__main__":
     generate_scss()

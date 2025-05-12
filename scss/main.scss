@@ -5,7 +5,8 @@
 @use "base";
 @use "box-project";
 @use "nav";
-@use "projects-page";
+@use "projects-page-base";
+@use "projects-page-rules";
 @use "project-page";
 @use "nav-global";
 @use "connexion";

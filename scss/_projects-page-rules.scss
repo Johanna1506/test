@@ -1,0 +1,16 @@
+// Règles de visibilité des projets par utilisateur
+// Ce fichier est généré automatiquement, ne pas modifier manuellement
+
+// Afficher les projets pour l'utilisateur 34771
+body:has(#desktop_default_client_space[href="/fr/users/34771/edit"]) {
+  #box_project_406953 {
+    display: block !important;
+  }
+}
+
+// Afficher les projets pour l'utilisateur 34772
+body:has(#desktop_default_client_space[href="/fr/users/34772/edit"]) {
+  #box_project_406953 {
+    display: block !important;
+  }
+}

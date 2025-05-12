@@ -1,8 +1,55 @@
-// Styles de la page de projet
-.sticky-wrapper {
+// Styles de base de la page des projets
+.top_text_zone {
+  background-color: var(--color-highlight);
+  height: 260px;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: 2.2em;
+    text-align: center;
+    font-weight: bold !important;
+    text-transform: none !important;
+  }
+}
+
+.boxslider {
+  background-color: var(--color-background) !important;
+}
+
+#section_own_projects {
+  > .grid {
+    margin: 0 !important;
+    display: flex !important;
+    gap: 12px !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    > .grid__item {
+      padding: 0 !important;
+      width: auto !important;
+    }
+  }
+
+  h3 {
+    display: none !important;
+  }
+}
+
+#projects_discover_section_explore {
   display: none !important;
 }
 
+#projects_section_explore {
+  > .eight-tenths {
+    width: 100% !important;
+  }
+}
+
+// Styles pour la grille des projets
 #grid_horizontal_share_project {
   width: 100% !important;
   margin: 0 auto !important;
@@ -25,6 +72,7 @@
   }
 }
 
+// Styles pour la navigation des projets
 #section_nav_project {
   padding-left: 30px !important;
 
@@ -42,11 +90,13 @@
   }
 }
 
+// Masquer certains éléments
 .horizontal_project_logo,
 .horizontal_project_subtitle {
   display: none;
 }
 
+// Styles pour la carte horizontale du projet
 #horizontal_card_project {
   background-color: var(--color-background) !important;
   border-radius: var(--border-radius-medium) var(--border-radius-medium) 0 0 !important;
@@ -83,11 +133,13 @@
   }
 }
 
+// Ajustements pour la barre de progression
 body:has(.progress-bar:not([style*="display: none"])) #horizontal_card_project,
 body:has(.circle-progress) #horizontal_card_project {
   padding-bottom: 62px !important;
 }
 
+// Styles pour les données financières
 .inside-project-financial-data {
   text-align: start !important;
   margin-top: 12px !important;
@@ -97,6 +149,7 @@ body:has(.circle-progress) #horizontal_card_project {
   }
 }
 
+// Styles pour le statut du projet
 .inside-project-status {
   .grid {
     display: flex !important;
@@ -137,6 +190,7 @@ body:has(.circle-progress) #horizontal_card_project {
   }
 }
 
+// Styles pour les tags
 #show_tags {
   padding: 0 !important;
 }
@@ -172,6 +226,7 @@ body:has(.circle-progress) #horizontal_card_project {
   text-align: start !important;
 }
 
+// Styles pour les récompenses
 .infos-rewards {
   .info-rewards {
     h2 {
@@ -195,6 +250,7 @@ body:has(.circle-progress) #horizontal_card_project {
   }
 }
 
+// Styles pour les statistiques
 #statistics_project {
   .horizontal_statistics.card {
     position: initial !important;
@@ -222,6 +278,7 @@ body:has(.circle-progress) #horizontal_card_project {
   }
 }
 
+// Styles pour la barre de navigation du projet
 #project-navbar-desktop {
   background-color: var(--color-highlight) !important;
   padding: var(--spacing-medium) var(--spacing-small);
@@ -283,56 +340,16 @@ body:has(.circle-progress) #horizontal_card_project {
   }
 }
 
-// Styles pour les statistiques de projet
-.project-statistic-percentage {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  > div {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    &::after {
-      content: attr(data-value);
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: var(--font-size-large);
-      font-weight: bold;
-      color: var(--color-dark);
+@media screen and (max-width: 600px) {
+  #section_own_projects {
+    > .grid {
+      flex-direction: column !important;
+      align-items: center !important;
     }
   }
 }
 
-// Styles pour les cercles de progression
-@for $i from 0 through 100 {
-  .circle-progress[value="#{$i}"] ~ div::after {
-    content: "#{$i}%";
-  }
-}
-
-.project-statistic-percentage {
-  canvas {
-    width: 100%;
-    height: 100%;
-  }
-
-  .circle-progress {
-    display: none;
-  }
-}
-
-.project-statistic {
-  .submit.center #button_back_project {
-    margin: 0 auto;
-  }
+// Masquer tous les projets par défaut
+[id^="box_project_"] {
+  display: none !important;
 }
