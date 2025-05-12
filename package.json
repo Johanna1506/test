@@ -3,8 +3,7 @@
     "version": "1.0.0",
     "description": "Prosperia website",
     "scripts": {
-        "sass": "sass scss:css --watch",
-        "sass:build": "sass scss:css --style compressed"
+        "generate:projects-css": "python3 generate_css_rules.py"
     },
     "devDependencies": {
         "sass": "^1.71.1"
