@@ -36,6 +36,7 @@ a {
   display: flex !important;
   align-items: center !important;
   justify-content: flex-start !important;
+  text-transform: math-auto !important;
 }
 .btn:empty:not(input),
 input[type="submit"]:not([value]) {
@@ -56,6 +57,9 @@ button,
 .btn-icon {
   background-color: inherit !important;
   color: initial !important;
+}
+.btn-center {
+  margin: 0 auto;
 }
 
 button:hover,

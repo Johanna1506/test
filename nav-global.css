@@ -208,6 +208,40 @@ body:has(#desktop_default_client_space) .personalized_menu_right {
   right: var(--spacing-large);
   transform: translateY(-50%);
   z-index: 1000;
+  max-width: 206px;
+  position: relative;
+}
+
+body:has(#desktop_default_client_space) .personalized_menu_right::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: var(--color-primary);
+  z-index: 1;
+}
+
+body:has(#desktop_default_client_space) .personalized_menu_right::after {
+  content: "...";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: var(--color-primary);
+  padding-left: 4px;
+  z-index: 2;
+}
+
+body:has(#desktop_default_client_space) .personalized_menu_right > * {
+  position: relative;
+  z-index: 0;
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
 }
 
 body:has(#desktop_default_client_space) .btn-login {
