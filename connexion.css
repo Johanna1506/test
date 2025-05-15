@@ -79,11 +79,15 @@
   order: 3;
 }
 
-/* Sign-in */
-#main-container-registrations-new {
+#new_session .acceptance {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
 }
-
 /* Sign-in and Sign-up */
+#new_session .medium-title {
+  text-transform: math-auto !important;
+}
 #new_session .card {
   display: flex;
   flex-direction: column;
@@ -144,4 +148,22 @@
   #grid_session {
     flex-direction: column-reverse;
   }
+}
+
+.grid__item:has(#sign_up) > h1.medium-title,
+.grid__item:has(#sign_in) > h1.medium-title {
+  font-size: 0;
+  margin-bottom: 10px !important;
+}
+.grid__item:has(#sign_up) > h1.medium-title::after {
+  content: "Créer un compte";
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: math-auto;
+}
+.grid__item:has(#sign_in) > h1.medium-title::after {
+  content: "Se connecter";
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: math-auto;
 }
