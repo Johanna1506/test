@@ -7,11 +7,11 @@
 }
 .cookies-msg--container {
   width: 25% !important;
-  position: fixed;
-  bottom: 0;
-  background-color: var(--color-highlight);
-  border-top-left-radius: var(--border-radius-small);
-  color: var(--color-primary);
+  position: fixed !important;
+  bottom: 0 !important;
+  background-color: var(--color-highlight) !important;
+  border-top-right-radius: var(--border-radius-small) !important;
+  color: var(--color-primary) !important;
 }
 .cookies-msg--acceptLink a {
   background-color: var(--color-primary) !important;
