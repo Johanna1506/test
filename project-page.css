@@ -2,6 +2,10 @@
   display: none !important;
 }
 
+.sticky-wrapper:has(.cookies-msg--container) {
+  display: block !important;
+}
+
 #grid_horizontal_share_project {
   width: 100% !important;
   margin: 0 auto !important;
