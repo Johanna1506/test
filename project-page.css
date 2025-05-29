@@ -5,7 +5,18 @@
 .sticky-wrapper:has(.cookies-msg--container) {
   display: block !important;
 }
-
+.cookies-msg--container {
+  width: 25% !important;
+  position: fixed;
+  bottom: 0;
+  background-color: var(--color-highlight);
+  border-top-left-radius: var(--border-radius-small);
+  color: var(--color-primary);
+}
+.cookies-msg--acceptLink a {
+  background-color: var(--color-primary) !important;
+  color: var(--color-light) !important;
+}
 #grid_horizontal_share_project {
   width: 100% !important;
   margin: 0 auto !important;
