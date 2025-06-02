@@ -260,7 +260,7 @@ body:has(.circle-progress) #horizontal_card_project {
   display: none !important;
 }
 .document-project-display .fa-file-pdf-o {
-  font-size: 2rem;
+  font-size: 2rem !important;
 }
 .document-project-display .fa-file-pdf-o::before {
   display:none !important;
